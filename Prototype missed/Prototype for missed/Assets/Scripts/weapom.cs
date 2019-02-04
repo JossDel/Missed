@@ -8,7 +8,7 @@ public class weapom : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
     public GameObject secondBullet;
-    public int amountofbullets = 5;
+    public int amountofbullets = 8;
     private int bulletsfired = 0;
 
     private float timeBtwShots;
