@@ -9,7 +9,6 @@ public class Movement : PlayerStats
     void FixedUpdate()
     {
         rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * movementSpeed, Input.GetAxisRaw("Vertical") * movementSpeed);
-        rb.velocity.Normalize();
 
         //Camera and rotating stuff
         Vector3 mousepos = Input.mousePosition;
