@@ -8,21 +8,22 @@ public class weapom : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
     public GameObject secondBullet;
-    public int amountofbullets = 8;
+
+    public int bulletAmmount = 5;
     private int bulletsfired = 0;
 
     private float timeBtwShots;
-    public float startTimeBtwShots;
+    public float fireRate;
 
     private float timeBtwShots2;
-    public float startTimeBtwShots2;
+    public float secondaryFireRate;
 
     private float secondaryCooldown;
-    public float startSecondaryCooldown = 2f;
+    public float fireCooldown = 2f;
 
     private void Start()
     {
-        secondaryCooldown = startSecondaryCooldown;
+        secondaryCooldown = fireCooldown;
     }
     // Update is called once per frame
     void Update()
@@ -39,7 +40,7 @@ public class weapom : MonoBehaviour
         {
             timeBtwShots -= Time.deltaTime;
         }
-        if (bulletsfired != amountofbullets)
+        if (bulletsfired != bulletAmmount)
         {
             if (timeBtwShots2 <= 0)
             {
@@ -47,7 +48,7 @@ public class weapom : MonoBehaviour
                 {
                     Instantiate(secondBullet, firePoint.position, firePoint.rotation);
                     bulletsfired++;
-                    timeBtwShots2 = startTimeBtwShots2;
+                    timeBtwShots2 = secondaryFireRate;
                 }
             }
             else
@@ -58,7 +59,7 @@ public class weapom : MonoBehaviour
         {
             if (secondaryCooldown <= 0)
             {
-                secondaryCooldown = startSecondaryCooldown;
+                secondaryCooldown = fireCooldown;
                 bulletsfired = 0;
             }
             else
@@ -70,6 +71,6 @@ public class weapom : MonoBehaviour
     void Shoot()
     {
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        timeBtwShots = startTimeBtwShots;
+        timeBtwShots = fireRate;
     }
 }
