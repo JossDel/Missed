@@ -978,6 +978,7 @@ GameObject:
   - component: {fileID: 555816001}
   - component: {fileID: 555816000}
   - component: {fileID: 555815999}
+  - component: {fileID: 555816004}
   - component: {fileID: 555815998}
   - component: {fileID: 555816003}
   m_Layer: 0
@@ -999,9 +1000,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf01951ff6e68ee4f86d0c967c77a19d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  health: 3
-  rb: {fileID: 555815999}
+  health: 0
+  corruption: 0
+  movementSpeed: 0
+  activeWeapon: 0
+  dps: 0
+  rb: {fileID: 0}
 --- !u!50 &555815999
 Rigidbody2D:
   serializedVersion: 4
@@ -1120,10 +1124,27 @@ MonoBehaviour:
     type: 3}
   secondBullet: {fileID: 7572274192237260385, guid: f1722c73e5cf8a744a9d77917aa1c964,
     type: 3}
-  amountofbullets: 8
-  startTimeBtwShots: 0.5
-  startTimeBtwShots2: 0.15
-  startSecondaryCooldown: 2
+  bulletAmmount: 5
+  fireRate: 0
+  secondaryFireRate: 0
+  fireCooldown: 2
+--- !u!114 &555816004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555815997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b416c60497bae1846a57bdb8729a9eed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  corruption: 0
+  movementSpeed: 0
+  activeWeapon: 0
+  dps: 0
 --- !u!1 &580377262
 GameObject:
   m_ObjectHideFlags: 0

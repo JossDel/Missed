@@ -1,27 +1,15 @@
-﻿using System.Collections;
-using UnityEngine.UI;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class Movement : PlayerStats
 {
-
-    public float speed = 2.5f;
-    public int health = 3;
     public Rigidbody2D rb;
     private Vector2 moveDirection;
     
 
-    // Use this for initialization
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void FixedUpdate()
     {
-        rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * speed, Input.GetAxisRaw("Vertical") * speed);
+        rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * movementSpeed, Input.GetAxisRaw("Vertical") * movementSpeed);
+        rb.velocity.Normalize();
 
         //Camera and rotating stuff
         Vector3 mousepos = Input.mousePosition;
