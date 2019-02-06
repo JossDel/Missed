@@ -3,12 +3,21 @@
 public class Movement : PlayerStats
 {
     public Rigidbody2D rb;
-    private Vector2 moveDirection;
-    
+    private Vector2 moveVeocity;
 
-    void FixedUpdate()
+    private void Start()
     {
-        rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * movementSpeed, Input.GetAxisRaw("Vertical") * movementSpeed);
+        rb = GetComponent<Rigidbody2D>();
+    }
+    void Update()
+    {
+        Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        moveVeocity = moveInput.normalized * movementSpeed;
+    }
+
+void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + moveVeocity * Time.fixedDeltaTime);
 
         //Camera and rotating stuff
         Vector3 mousepos = Input.mousePosition;
