@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Detection : MonoBehaviour
 {
-
+    public GameObject mist;
     public int numberOfEnemies;
     // Start is called before the first frame update
     void Start()
@@ -17,6 +17,19 @@ public class Detection : MonoBehaviour
     {
         if (numberOfEnemies <= 0)
         {
+            //remove mist
+            mist.GetComponent<Mist>().amount = 0f;
+
+            mist.GetComponent<Mist>().speed = 0f;
+
+            mist.GetComponent<Mist>().rb.velocity = Vector2.zero;
+            mist.AddComponent<FadeOut>();
+
+
+
+
+            GameObject.Find("EnemyDetector").GetComponent<Detection>().OnEnemyDestroyed();
+            //make it so that the player can move along to next level
             Debug.Log("You did it!");
         }
     }

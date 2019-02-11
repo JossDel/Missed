@@ -4,7 +4,7 @@ public class PlayerStats : MonoBehaviour
 {
     public int health = 100;
     public int maxHealth = 100;
-    public int corruption = 0;
+    public float corruption = 0;
     public float movementSpeed = 2.5f;
     public int activeWeapon = 1;
     public float dps = 0.5f;
@@ -44,6 +44,12 @@ public class PlayerStats : MonoBehaviour
         if (health > maxHealth)
         {
             health = maxHealth;
+        }
+
+
+        if (health <= 0)
+        {
+            Die();
         }
     } 
 
