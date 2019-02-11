@@ -100,7 +100,7 @@ MonoBehaviour:
   retreatDistance: 4.5
   player: {fileID: 0}
   projetile: {fileID: 1362547277108100, guid: b184e891cfe23554ebe7891e24116011, type: 3}
-  startTimeBtwShots: 2.5
+  startTimeBtwShots: 2
 --- !u!50 &50047997800705464
 Rigidbody2D:
   serializedVersion: 4

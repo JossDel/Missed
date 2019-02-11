@@ -5,6 +5,7 @@ using UnityEngine;
 public class enemybullet : MonoBehaviour {
 
     public float speed = 5f;
+    public int damage = 5;
 
     private Transform player;
     private Vector2 target;
@@ -30,7 +31,12 @@ public class enemybullet : MonoBehaviour {
     {
         if (other.CompareTag("Player"))
         {
-            DestroyProjectile();
+            PlayerStats player = other.GetComponent<PlayerStats>();
+            if (player != null)
+            {
+                player.takeDamage(damage);
+            }
+                DestroyProjectile();
         }
         
     }

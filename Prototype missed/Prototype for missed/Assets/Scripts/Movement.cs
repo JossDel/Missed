@@ -10,10 +10,11 @@ public class Movement : PlayerStats
         rb = GetComponent<Rigidbody2D>();
     }
     void Update()
-    {
-        Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        moveVeocity = moveInput.normalized * movementSpeed;
+    {   
+            Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+            moveVeocity = moveInput.normalized * movementSpeed;
     }
+
 
 void FixedUpdate()
     {
@@ -31,6 +32,4 @@ void FixedUpdate()
         transform.up = direction;
 
     }
-    
-  
 }

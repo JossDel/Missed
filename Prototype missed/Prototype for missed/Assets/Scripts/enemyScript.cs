@@ -5,7 +5,7 @@ using UnityEngine;
 public class enemyScript : MonoBehaviour {
 
     public int Health = 8;
-
+    public
 	// Use this for initialization
 	void Start () {
 		
@@ -26,7 +26,8 @@ public class enemyScript : MonoBehaviour {
     }
     void Die()
     {
-     
+        GameObject.Find("EnemyDetector").GetComponent<Detection>().OnEnemyDestroyed();
         Destroy(gameObject);
+        
     }
 }

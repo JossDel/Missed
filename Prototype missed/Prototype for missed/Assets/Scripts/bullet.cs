@@ -26,5 +26,9 @@ public class bullet : MonoBehaviour
             
             Destroy(gameObject);
         }
+        if (collision.CompareTag("Walls"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
