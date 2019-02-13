@@ -1,13 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Mist : MonoBehaviour {
 
     public float speed = 0.5f;
 
     public Rigidbody2D rb;
-    public float amount;
+    public float amount; // What is amount?
 
     [SerializeField] float mistAttackRate = 1f;
     private float timer;

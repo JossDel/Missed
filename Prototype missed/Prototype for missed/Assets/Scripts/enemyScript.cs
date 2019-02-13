@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class enemyScript : MonoBehaviour {
 
@@ -28,6 +26,5 @@ public class enemyScript : MonoBehaviour {
     {
         GameObject.Find("EnemyDetector").GetComponent<Detection>().OnEnemyDestroyed();
         Destroy(gameObject);
-        
     }
 }
