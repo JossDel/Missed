@@ -4,14 +4,20 @@ public class Enemymovement : MonoBehaviour {
 
     public float speed;
     private Transform target;
+    public int canSeePlayer;
 
 	// Use this for initialization
 	void Start () {
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+            canSeePlayer = 0;
+            target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        if (canSeePlayer == 1)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        }
+            
 	}
 }
