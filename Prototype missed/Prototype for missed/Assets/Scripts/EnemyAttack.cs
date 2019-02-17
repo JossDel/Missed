@@ -7,7 +7,7 @@ public class EnemyAttack : MonoBehaviour
     public int damage = 10;
     private float timeBtwAttack;
     public float attackRate;
-
+   
     // Start is called before the first frame update
     void Start()
     {
