@@ -4,7 +4,7 @@ public class Detection : MonoBehaviour
 {
     public GameObject mist;
     public int numberOfEnemies;
-
+    public GameObject Door;
     // Update is called once per frame
     void Update()
     {
@@ -23,7 +23,8 @@ public class Detection : MonoBehaviour
 
             GameObject.Find("EnemyDetector").GetComponent<Detection>().OnEnemyDestroyed();
             //make it so that the player can move along to next level
-            Debug.Log("You did it!");
+            Door.GetComponent<NextScene>().open = true;
+
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
