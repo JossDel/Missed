@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -9,13 +11,17 @@ public class PlayerStats : MonoBehaviour
     public int activeWeapon = 1;
     public float dps = 0.5f;
 
-    
+    public Slider healthbar;
+    public Slider corruptionbar;
+
 
     // Start is called before the first frame update
     void Start()
     {
         maxHealth = 100;
         health = 100;
+        healthbar.value = CalculateHealth();
+        corruptionbar.value = CalculateCorruption();
     }
 
     // Update is called once per frame
@@ -46,12 +52,13 @@ public class PlayerStats : MonoBehaviour
             health = maxHealth;
         }
 
+        healthbar.value = CalculateHealth();
 
         if (health <= 0)
         {
             Die();
         }
-    } 
+    }
 
     public void takeDamage(int damage)
     {
@@ -66,5 +73,15 @@ public class PlayerStats : MonoBehaviour
     {
 
         Destroy(gameObject);
+    }
+
+    float CalculateHealth()
+    {
+        return (float)health / (float)maxHealth;
+    }
+
+    float CalculateCorruption()
+    {
+        return (float)corruption / 100f;
     }
 }
