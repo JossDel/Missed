@@ -27,30 +27,37 @@ public class PlayerStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (corruption == 20)
-        {
-            maxHealth = 80;
-        }
-        if (corruption == 40)
-        {
-            maxHealth = 60;
-        }
-        if (corruption == 60)
-        {
-            maxHealth = 40;
-        }
-        if (corruption == 80)
-        {
-            maxHealth = 20;
-        }
-        if (corruption == 100)
+        if (corruption >= 100)
         {
             maxHealth = 0;
         }
+        else if (corruption >= 80)
+        {
+            maxHealth = 20;
+        }
+        else if (corruption >= 60)
+        {
+            maxHealth = 40;
+        }
+        else if (corruption >= 40)
+        {
+            maxHealth = 60;
+        }
+        else if (corruption >= 20)
+        {
+            maxHealth = 80;
+        }
+        else if (corruption >= 0)
+        {
+            maxHealth = 100;
+        }
+
         if (health > maxHealth)
         {
             health = maxHealth;
         }
+
+        Debug.Log(corruption);
 
         healthbar.value = CalculateHealth();
 
@@ -77,7 +84,7 @@ public class PlayerStats : MonoBehaviour
 
     float CalculateHealth()
     {
-        return (float)health / (float)maxHealth;
+        return (float)health / 100f;
     }
 
     float CalculateCorruption()
