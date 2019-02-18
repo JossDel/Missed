@@ -9,6 +9,8 @@ public class weapom : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject secondBullet;
 
+    public Slider cooldown;
+
     public int bulletAmmount = 5;
     private int bulletsfired = 0;
 
@@ -24,6 +26,7 @@ public class weapom : MonoBehaviour
     private void Start()
     {
         secondaryCooldown = fireCooldown;
+        cooldown.value = CooldownCalculate();
     }
     // Update is called once per frame
     void Update()
@@ -40,11 +43,19 @@ public class weapom : MonoBehaviour
         {
             timeBtwShots -= Time.deltaTime;
         }
-        if (bulletsfired != bulletAmmount)
+        if (bulletsfired != bulletAmmount)          // If you have more secondary bullets to shoot
         {
             if (timeBtwShots2 <= 0)
             {
-                if (Input.GetButton("Fire2"))
+                if(bulletsfired == 0){
+                    if (Input.GetButton("Fire2"))
+                    {
+                        Instantiate(secondBullet, firePoint.position, firePoint.rotation);
+                        bulletsfired++;
+                        timeBtwShots2 = secondaryFireRate;
+                    }
+                }
+                else
                 {
                     Instantiate(secondBullet, firePoint.position, firePoint.rotation);
                     bulletsfired++;
@@ -67,10 +78,16 @@ public class weapom : MonoBehaviour
                 secondaryCooldown -= Time.deltaTime;
             }
         }
+        cooldown.value = CooldownCalculate();
     }
     void Shoot()
     {
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         timeBtwShots = fireRate;
+    }
+
+    float CooldownCalculate()
+    {
+        return (float)bulletsfired / (float)bulletAmmount;
     }
 }
