@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec0b085e747e534db8f35cfc7b74cf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.2
+  speed: 5
   canSeePlayer: 0
 --- !u!114 &34465869
 MonoBehaviour:
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d94f6b58dc46d3048b211b5f3c84d22d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 50
+  Health: 40
 --- !u!58 &782332630279395434
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -148,7 +148,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.48
+  m_Radius: 3.5
 --- !u!1 &1445679470
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,7 +210,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.09735012}
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 5
 --- !u!1 &5608963049183557423
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,4 +271,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 25
+  m_Radius: 50
