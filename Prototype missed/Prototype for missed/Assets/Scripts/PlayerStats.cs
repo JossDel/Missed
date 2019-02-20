@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -79,7 +80,7 @@ public class PlayerStats : MonoBehaviour
     void Die()
     {
 
-        Destroy(gameObject);
+        SceneManager.LoadScene(0);
     }
 
     float CalculateHealth()
