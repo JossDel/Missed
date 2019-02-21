@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 50234316962880954}
   - component: {fileID: 114999166205502496}
   - component: {fileID: 6782408493712096810}
-  - component: {fileID: 8606690987081798207}
+  - component: {fileID: 1038190159425692075}
   m_Layer: 0
   m_Name: Bulletprefab
   m_TagString: Untagged
@@ -29,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389000706738374}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5162637, y: 0.3851087, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.5, z: 1}
+  m_LocalPosition: {x: 2.5162637, y: 0.38511, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.43, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
-  speed: 18
+  speed: 25
 --- !u!114 &6782408493712096810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,9 +130,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c8aac9d66cc7c459f92edddf312d89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: 1.6
---- !u!58 &8606690987081798207
-CircleCollider2D:
+  lifetime: 2
+--- !u!70 &1038190159425692075
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -144,6 +144,6 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.018639803, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.41278148
+  m_Offset: {x: 0.023753643, y: 0.1363678}
+  m_Size: {x: 3.6637306, y: 3.6516943}
+  m_Direction: 0
