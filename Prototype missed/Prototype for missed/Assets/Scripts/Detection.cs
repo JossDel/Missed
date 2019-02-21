@@ -17,6 +17,7 @@ public class Detection : MonoBehaviour
 
             mist.GetComponent<Mist>().rb.velocity = Vector2.zero;
             mist.AddComponent<FadeOut>();
+            
 
 
 
@@ -24,6 +25,8 @@ public class Detection : MonoBehaviour
             GameObject.Find("EnemyDetector").GetComponent<Detection>().OnEnemyDestroyed();
             //make it so that the player can move along to next level
             Door.GetComponent<NextScene>().open = true;
+            this.enabled = false;
+            
 
         }
     }

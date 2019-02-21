@@ -80,7 +80,7 @@ public class PlayerStats : MonoBehaviour
     void Die()
     {
 
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(3);
     }
 
     float CalculateHealth()
