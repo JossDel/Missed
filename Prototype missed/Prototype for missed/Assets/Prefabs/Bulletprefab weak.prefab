@@ -80,7 +80,7 @@ PrefabInstance:
     - target: {fileID: 6782408493712096810, guid: 12eeeac5913922c44a5cbc91c6447ec1,
         type: 3}
       propertyPath: lifetime
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12eeeac5913922c44a5cbc91c6447ec1, type: 3}
