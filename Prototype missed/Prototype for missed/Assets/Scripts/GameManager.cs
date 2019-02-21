@@ -4,32 +4,37 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance = null;    // This along with the code in awake, makes sure that this script only exists once
-    public RoomManager roomScript;
+    GameObject player;
+    PlayerStats playerStats;
 
-    private int room = 3;
-
-
-    void Awake()
+    void Start()
     {
-        if (instance == null)                      // This sets the null istance to this one if there is none
-            instance = this;
-        else if (instance != this)                 // If there's already an instance and this gets called again, it deletes the new instance.
-            Destroy(gameObject);
-
-        DontDestroyOnLoad(gameObject);             // This makes sure that this script doesn't get destroyed after loading a new scene
-        roomScript = GetComponent<RoomManager>();
-        InitGame();
+        player = GameObject.Find("Player");
+        playerStats = player.GetComponent<PlayerStats>();
     }
 
-    void InitGame()
+    public void Save()
     {
-        //roomScript.SetupScene(room);
+        PlayerPrefs.SetInt("health", playerStats.health);
+        PlayerPrefs.SetInt("maxHealth", playerStats.maxHealth);
+        PlayerPrefs.SetFloat("corruption", playerStats.corruption);
+        PlayerPrefs.SetFloat("movementSpeed", playerStats.movementSpeed);
+        PlayerPrefs.SetInt("activeWeapon", playerStats.activeWeapon);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Save(string room)
     {
-        
+        Save();
+        PlayerPrefs.SetString("progress", room);
+    }
+
+    public void Load()
+    {
+        playerStats.health = PlayerPrefs.GetInt("health", playerStats.health);
+        playerStats.maxHealth = PlayerPrefs.GetInt("maxHealth", playerStats.maxHealth);
+        playerStats.corruption = PlayerPrefs.GetFloat("corruption", playerStats.corruption);
+        playerStats.movementSpeed = PlayerPrefs.GetFloat("movementSpeed", playerStats.movementSpeed);
+        playerStats.activeWeapon = PlayerPrefs.GetInt("activeWeapon", playerStats.activeWeapon);
     }
 }
+

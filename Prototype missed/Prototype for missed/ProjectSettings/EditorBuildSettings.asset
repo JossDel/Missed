@@ -26,4 +26,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 5b87e39bae10c25438c1bef90876c8b0
+  - enabled: 1
+    path: Assets/Scenes/test static stuff/Main Menu.unity
+    guid: 4fb491ae33634f044804b6d08fc7f519
+  - enabled: 1
+    path: Assets/Scenes/test static stuff/Overworld.unity
+    guid: f5860bdb0ca5ad04d8347c3be0fd9d69
+  - enabled: 1
+    path: Assets/Scenes/test static stuff/level 1-1.unity
+    guid: 4892154d58ba8fd479cc012574f3fa16
   m_configObjects: {}

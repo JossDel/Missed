@@ -12,20 +12,23 @@ public class PlayerStats : MonoBehaviour
     public int activeWeapon = 1;
     public float dps = 0.5f;
 
+    GameObject gameManager;
+    GameManager gameManagerScript;
+
     public Slider healthbar;
     public Slider corruptionbar;
 
 
-    // Start is called before the first frame update
     void Start()
     {
-        maxHealth = 100;
-        health = 100;
+        gameManager = GameObject.Find("GameManager");
+        gameManagerScript = gameManager.GetComponent<GameManager>();
+        gameManagerScript.Load();
+
         healthbar.value = CalculateHealth();
         corruptionbar.value = CalculateCorruption();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (corruption >= 100)
@@ -58,8 +61,6 @@ public class PlayerStats : MonoBehaviour
             health = maxHealth;
         }
 
-        Debug.Log(corruption);
-
         healthbar.value = CalculateHealth();
 
         if (health <= 0)
@@ -68,12 +69,19 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
+    private void OnDestroy()
+    {
+        gameManagerScript.Save();
+    }
+
     public void takeDamage(int damage)
     {
         health -= damage;
        
         if(health <= 0)
         {
+            health = 100;
+            corruption = 0;
             Die();
         }
     }
@@ -90,6 +98,6 @@ public class PlayerStats : MonoBehaviour
 
     float CalculateCorruption()
     {
-        return (float)corruption / 100f;
+        return corruption / 100f;
     }
 }
