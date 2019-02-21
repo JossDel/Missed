@@ -15,12 +15,13 @@ public class enemyScript : MonoBehaviour {
 	}
     public void TakeDamage(int damage)
     {
-        Health -= damage;
 
         if (Health <= 0)
         {
             Die();
+            return;
         }
+        Health -= damage;
     }
     void Die()
     {

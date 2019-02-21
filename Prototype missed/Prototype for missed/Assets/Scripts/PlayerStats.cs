@@ -62,6 +62,7 @@ public class PlayerStats : MonoBehaviour
         }
 
         healthbar.value = CalculateHealth();
+        corruptionbar.value = CalculateCorruption();
 
         if (health <= 0)
         {
