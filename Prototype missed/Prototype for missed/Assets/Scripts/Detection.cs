@@ -6,7 +6,7 @@ public class Detection : MonoBehaviour
     public int numberOfEnemies;
     public GameObject Door;
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         if (numberOfEnemies <= 0)
         {
