@@ -38,7 +38,11 @@ public class enemybullet : MonoBehaviour {
             }
                 DestroyProjectile();
         }
-        
+        if (other.CompareTag("Walls"))
+        {
+            Destroy(gameObject);
+        }
+
     }
 
     void DestroyProjectile()

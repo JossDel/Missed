@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1941083304819260}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.2039046, y: 0.028400779, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children:
   - {fileID: 8668784569004098886}
   m_Father: {fileID: 0}
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 10a72396dc9a89045a5e09d8c5e3233d, type: 3}
-  m_Color: {r: 0.4245283, g: 0, b: 0.09678584, a: 1}
+  m_Color: {r: 0.094339624, g: 0.09512877, b: 0.3773585, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -96,9 +96,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 843e1ed640ffbe7448bbe93759ff1c5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  stopinDinstance: 12
-  retreatDistance: 8
+  speed: 18
+  stopinDinstance: 45
+  retreatDistance: 30
   canSeePlayer: 0
   player: {fileID: 0}
   projetile: {fileID: 1362547277108100, guid: b184e891cfe23554ebe7891e24116011, type: 3}
@@ -226,7 +226,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 20
+  m_Radius: 12
 --- !u!114 &1933666324565932471
 MonoBehaviour:
   m_ObjectHideFlags: 0
