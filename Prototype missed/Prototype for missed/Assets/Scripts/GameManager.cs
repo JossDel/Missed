@@ -36,5 +36,9 @@ public class GameManager : MonoBehaviour
         playerStats.movementSpeed = PlayerPrefs.GetFloat("movementSpeed", playerStats.movementSpeed);
         playerStats.activeWeapon = PlayerPrefs.GetInt("activeWeapon", playerStats.activeWeapon);
     }
+    private void OnDestroy()
+    {
+        Save();
+    }
 }
 

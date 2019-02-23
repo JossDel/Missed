@@ -70,11 +70,6 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-    private void OnDestroy()
-    {
-        gameManagerScript.Save();
-    }
-
     public void takeDamage(int damage)
     {
         health -= damage;
@@ -88,7 +83,9 @@ public class PlayerStats : MonoBehaviour
     }
     void Die()
     {
-
+        health = 100;
+        maxHealth = 100;
+        corruption = 0;
         SceneManager.LoadScene(3);
     }
 
