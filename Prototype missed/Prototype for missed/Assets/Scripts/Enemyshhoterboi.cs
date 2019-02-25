@@ -13,7 +13,7 @@ public class Enemyshhoterboi : MonoBehaviour {
     public GameObject projetile;
 
     [SerializeField] float minReload;
-        [SerializeField] float maxReload;
+    [SerializeField] float maxReload;
     private float timeBtwShots;
     public float startTimeBtwShots;
 

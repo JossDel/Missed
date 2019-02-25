@@ -1,11 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     GameObject player;
     PlayerStats playerStats;
+    public GameObject enemiesPrefab;
+    GameObject prefChild;
+
+    void Awake()
+    {
+        prefChild = enemiesPrefab.transform.GetChild(Random.Range(0, 2)).gameObject;
+        Instantiate(prefChild, new Vector3(20.43916f, -57.34339f, 0), new Quaternion());
+    }
 
     void Start()
     {
