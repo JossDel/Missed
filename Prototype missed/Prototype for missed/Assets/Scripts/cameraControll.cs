@@ -10,6 +10,7 @@ public class cameraControll : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        cam = GetComponent<Camera>().transform;
         offset = cam.position - player.transform.position;
     }
 
