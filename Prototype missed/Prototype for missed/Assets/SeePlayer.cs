@@ -18,7 +18,10 @@ public class SeePlayer : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            enemy.GetComponent<Enemymovement>().canSeePlayer = 1;
+            if (enemy.CompareTag("EnemyShooter"))
+                enemy.GetComponent<Enemyshhoterboi>().canSeePlayer = 1;
+            else
+                enemy.GetComponent<Enemymovement>().canSeePlayer = 1;
            
 
         }
