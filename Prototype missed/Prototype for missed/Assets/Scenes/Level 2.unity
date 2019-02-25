@@ -5216,6 +5216,7 @@ GameObject:
   - component: {fileID: 1903246073}
   - component: {fileID: 1903246072}
   - component: {fileID: 1903246071}
+  - component: {fileID: 1903246077}
   - component: {fileID: 1903246070}
   m_Layer: 0
   m_Name: Player
@@ -5387,6 +5388,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1903246077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903246069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87690dcc058353f41ba7689cae0bb511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireBall: {fileID: 8607296050508564201, guid: 53b9d6ea687bbc14483108cb4531c7a5,
+    type: 3}
+  firePoint: {fileID: 1154597499}
+  fireRate: 2
 --- !u!1 &2013811038
 GameObject:
   m_ObjectHideFlags: 0
