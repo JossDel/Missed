@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4054890332479461965}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Enemies lvl2 all
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,6 +42,10 @@ PrefabInstance:
     - target: {fileID: 718902388, guid: ee4f53fe2e8632e4e80513b9b52c972e, type: 3}
       propertyPath: m_Name
       value: Enemies lvl2 v2
+      objectReference: {fileID: 0}
+    - target: {fileID: 718902388, guid: ee4f53fe2e8632e4e80513b9b52c972e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 718902389, guid: ee4f53fe2e8632e4e80513b9b52c972e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -106,6 +110,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemies lvl2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6039144460278850558, guid: 07b248b7cd88045418d6adc214080de9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6039144460278850559, guid: 07b248b7cd88045418d6adc214080de9,
         type: 3}
