@@ -9,8 +9,8 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        prefChild = enemiesPrefab.transform.GetChild(Random.Range(0, 2)).gameObject;
-        Instantiate(prefChild, new Vector3(20.43916f, -57.34339f, 0), new Quaternion());
+        prefChild = enemiesPrefab.transform.GetChild(Random.Range(0, enemiesPrefab.transform.childCount)).gameObject;
+        Instantiate(prefChild, Vector3.zero, new Quaternion());
     }
 
     void Start()
