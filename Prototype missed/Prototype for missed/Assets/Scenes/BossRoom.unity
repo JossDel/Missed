@@ -6815,7 +6815,7 @@ MonoBehaviour:
     type: 3}
   player: {fileID: 607797001}
   firePoint: {fileID: 2028916826}
-  startTimeBtwShots: 1
+  startTimeBtwShots: 2
 --- !u!1 &1544443481
 GameObject:
   m_ObjectHideFlags: 0
