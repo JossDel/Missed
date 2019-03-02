@@ -3,9 +3,15 @@
 public class Detection : MonoBehaviour
 {
     public GameObject mist;
+    public GameObject mistsecond1;
+    public GameObject mistsecond2;
+
+
     public int numberOfEnemies;
     public GameObject Door;
     // Update is called once per frame
+   
+
     void LateUpdate()
     {
         if (numberOfEnemies <= 0)
@@ -17,7 +23,10 @@ public class Detection : MonoBehaviour
 
             mist.GetComponent<Mist>().rb.velocity = Vector2.zero;
             mist.AddComponent<FadeOut>();
-            
+            mistsecond1.AddComponent<FadeOut>();
+            mistsecond2.AddComponent<FadeOut>();
+
+
 
 
 
