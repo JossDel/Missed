@@ -18,6 +18,13 @@ public class PlayerStats : MonoBehaviour
     public Slider healthbar;
     public Slider corruptionbar;
 
+    float _weaponChangeBuffer;
+    [SerializeField]
+    float _weaponChangeBufferTime = 3;
+
+    public GameObject _light;
+    public GameObject _fire;
+    public GameObject _electr;
 
     void Start()
     {
@@ -64,6 +71,29 @@ public class PlayerStats : MonoBehaviour
         healthbar.value = CalculateHealth();
         corruptionbar.value = CalculateCorruption();
 
+        if (Input.GetKeyDown("1") && activeWeapon != 1)
+        {
+            Debug.Log("First Key pressed");
+            ChangeWeapon(1);
+        }
+        else if (Input.GetKey("2") && activeWeapon != 2)
+        {
+            Debug.Log("Second Key pressed");
+            ChangeWeapon(2);
+        }
+        else if (Input.GetKey("3") && activeWeapon != 3)
+        {
+            Debug.Log("Third Key pressed");
+            ChangeWeapon(3);
+        }
+
+        if (_weaponChangeBuffer > 0)
+        {
+            Debug.Log("inside buffer");
+            _weaponChangeBuffer -= Time.deltaTime * 100;
+            Debug.Log(_weaponChangeBuffer);
+        }
+
         if (health <= 0)
         {
             Die();
@@ -97,5 +127,35 @@ public class PlayerStats : MonoBehaviour
     float CalculateCorruption()
     {
         return corruption / 100f;
+    }
+
+    void ChangeWeapon(int weapon)
+    {
+        if (_weaponChangeBuffer == 0)
+        {
+            Debug.Log("weapon changing to" + weapon);
+            _weaponChangeBuffer = _weaponChangeBufferTime;
+            activeWeapon = weapon;
+
+            _light.GetComponent("Is On").Equals(false);
+            _fire.GetComponent("Is On").Equals(false);
+            _electr.GetComponent("Is On").Equals(false);
+
+            if (weapon == 1)
+            {
+                _light.GetComponent("Is On").Equals(true);
+                Debug.Log("one made true");
+            }
+            else if (weapon == 2)
+            {
+                _fire.GetComponent("Is On").Equals(true);
+                Debug.Log("two made true");
+            }
+            else if (weapon == 3)
+            {
+                _electr.GetComponent("Is On").Equals(true);
+                Debug.Log("three made true");
+            }
+        }
     }
 }
