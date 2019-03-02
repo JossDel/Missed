@@ -802,6 +802,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9529038ab94d3a44abe93731724b5563, type: 3}
+--- !u!1 &664674227 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4395325879722010088, guid: 9529038ab94d3a44abe93731724b5563,
+    type: 3}
+  m_PrefabInstance: {fileID: 664674226}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &667478664
 GameObject:
   m_ObjectHideFlags: 0
@@ -4239,7 +4245,7 @@ PrefabInstance:
     - target: {fileID: 80914400534018899, guid: 8f71c261f144b8742a528287f382a33e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 80914400534018911, guid: 8f71c261f144b8742a528287f382a33e,
         type: 3}
@@ -4349,27 +4355,27 @@ PrefabInstance:
     - target: {fileID: 80914400192313634, guid: 8f71c261f144b8742a528287f382a33e,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.787
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 80914400192313634, guid: 8f71c261f144b8742a528287f382a33e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 80914399871864705, guid: 8f71c261f144b8742a528287f382a33e,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.819
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 80914399871864705, guid: 8f71c261f144b8742a528287f382a33e,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 80914399871864705, guid: 8f71c261f144b8742a528287f382a33e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 80914399724864521, guid: 8f71c261f144b8742a528287f382a33e,
         type: 3}
@@ -4590,6 +4596,11 @@ PrefabInstance:
       propertyPath: mistsecond2
       value: 
       objectReference: {fileID: 1182673914}
+    - target: {fileID: 8417867274478927984, guid: 40008aabad0625241a1e10ea93e59f09,
+        type: 3}
+      propertyPath: Door
+      value: 
+      objectReference: {fileID: 664674227}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40008aabad0625241a1e10ea93e59f09, type: 3}
 --- !u!1 &1091517236
@@ -4833,6 +4844,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4951
       objectReference: {fileID: 0}
+    - target: {fileID: 2826893258585694486, guid: c579a43fc6bc3aa47b7e574fcc03e58c,
+        type: 3}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826893258585694486, guid: c579a43fc6bc3aa47b7e574fcc03e58c,
+        type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 1182673927}
     - target: {fileID: 2826893258585694489, guid: c579a43fc6bc3aa47b7e574fcc03e58c,
         type: 3}
       propertyPath: m_Color.a
@@ -4853,11 +4874,6 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2826893258585694486, guid: c579a43fc6bc3aa47b7e574fcc03e58c,
-        type: 3}
-      propertyPath: speed
-      value: 5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c579a43fc6bc3aa47b7e574fcc03e58c, type: 3}
 --- !u!1 &1182673914 stripped
@@ -4875,6 +4891,12 @@ GameObject:
 --- !u!1 &1182673916 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2826893258585694484, guid: c579a43fc6bc3aa47b7e574fcc03e58c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1182673913}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &1182673927 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 2826893258585694487, guid: c579a43fc6bc3aa47b7e574fcc03e58c,
     type: 3}
   m_PrefabInstance: {fileID: 1182673913}
   m_PrefabAsset: {fileID: 0}
@@ -5226,17 +5248,17 @@ PrefabInstance:
     - target: {fileID: 4336674134168717784, guid: 0ca256449ef177e4a94f21f50372e673,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.593
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4336674134168717784, guid: 0ca256449ef177e4a94f21f50372e673,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4336674134168717784, guid: 0ca256449ef177e4a94f21f50372e673,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ca256449ef177e4a94f21f50372e673, type: 3}
@@ -5355,6 +5377,10 @@ MonoBehaviour:
   dps: 0.5
   healthbar: {fileID: 0}
   corruptionbar: {fileID: 0}
+  _weaponChangeBufferTime: 3
+  _light: {fileID: 0}
+  _fire: {fileID: 0}
+  _electr: {fileID: 0}
   rb: {fileID: 1470599732}
 --- !u!114 &1470599730
 MonoBehaviour:
@@ -5398,6 +5424,10 @@ MonoBehaviour:
   dps: 0.5
   healthbar: {fileID: 1033871604}
   corruptionbar: {fileID: 1033871603}
+  _weaponChangeBufferTime: 3
+  _light: {fileID: 0}
+  _fire: {fileID: 0}
+  _electr: {fileID: 0}
 --- !u!50 &1470599732
 Rigidbody2D:
   serializedVersion: 4

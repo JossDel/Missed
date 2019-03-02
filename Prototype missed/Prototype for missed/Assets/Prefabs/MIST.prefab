@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ed7375a516fdea4babcba1ab8af9daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4.5
-  rb: {fileID: 0}
+  speed: 8
+  rb: {fileID: 2826893258585694487}
   amount: 1
   mistAttackRate: 0.5
 --- !u!50 &2826893258585694487
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68aa355f1d474b84fa68e171596d8b84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4.2
+  speed: 7.8
   rb: {fileID: 0}
   secondmist: {fileID: 0}
 --- !u!1 &8710420688952596235
@@ -378,6 +378,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68aa355f1d474b84fa68e171596d8b84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4.3
+  speed: 7.9
   rb: {fileID: 0}
   secondmist: {fileID: 0}
