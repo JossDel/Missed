@@ -1119,6 +1119,10 @@ MonoBehaviour:
   dps: 0.5
   healthbar: {fileID: 0}
   corruptionbar: {fileID: 0}
+  _weaponChangeBufferTime: 3
+  _light: {fileID: 0}
+  _fire: {fileID: 0}
+  _electr: {fileID: 0}
   rb: {fileID: 940356379}
 --- !u!114 &940356377
 MonoBehaviour:
@@ -1162,6 +1166,10 @@ MonoBehaviour:
   dps: 0.5
   healthbar: {fileID: 69127814}
   corruptionbar: {fileID: 69127813}
+  _weaponChangeBufferTime: 3
+  _light: {fileID: 0}
+  _fire: {fileID: 0}
+  _electr: {fileID: 0}
 --- !u!50 &940356379
 Rigidbody2D:
   serializedVersion: 4
@@ -1667,6 +1675,8 @@ MonoBehaviour:
       colorBlindnessType: 0
       colorBlindnessStrength: 1
   m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
   breakBeforeColorGrading: 0
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
@@ -4323,7 +4333,7 @@ PrefabInstance:
         type: 3}
       propertyPath: enemiesPrefab
       value: 
-      objectReference: {fileID: 2225294095487166069, guid: 4dcfe8b1094eaa040bb777c33b7d865b,
+      objectReference: {fileID: 2225294095487166069, guid: fa74f114b77f7ac4ab0beff2d828be65,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c95c3b25ed800eb4da33234d8641bb81, type: 3}
