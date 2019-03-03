@@ -41,23 +41,23 @@ public class ThunderWeapon : MonoBehaviour
             timeBetCasts -= Time.deltaTime;
         }
 
-        if (bulletsfired != bulletAmmount)          // If you have more secondary bullets to shoot
+        if (/*bulletsfired != bulletAmmount*/true)          // If you have more secondary bullets to shoot
         {
             if (timeBetCasts2 <= 0)
             {
-                if (bulletsfired == 0)
+                if (/*bulletsfired*/5 == 0)
                 {
                     if (Input.GetButton("Fire2"))
                     {
                         Instantiate(lightFieldPrefab, firePoint.position, firePoint.rotation);
-                        bulletsfired++;
+                        //bulletsfired++;
                         timeBetCasts2 = secondaryFireRate;
                     }
                 }
                 else
                 {
                     Instantiate(lightFieldPrefab, firePoint.position, firePoint.rotation);
-                    bulletsfired++;
+                    //bulletsfired++;
                     timeBetCasts2 = secondaryFireRate;
                 }
             }
@@ -71,7 +71,7 @@ public class ThunderWeapon : MonoBehaviour
             if (secondaryCooldown <= 0)
             {
                 secondaryCooldown = fireCooldown;
-                bulletsfired = 0;
+                //bulletsfired = 0;
             }
             else
             {
@@ -88,6 +88,6 @@ public class ThunderWeapon : MonoBehaviour
 
     float CooldownCalculate()
     {
-        return (float)bulletsfired / (float)bulletAmmount;
+        return 0/*(float)bulletsfired / (float)bulletAmmount*/;
     }
 }
