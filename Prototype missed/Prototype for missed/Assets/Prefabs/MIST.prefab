@@ -98,7 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   rb: {fileID: 2826893258585694487}
-  amount: 1
+  amount: 0.5
   mistAttackRate: 0.5
 --- !u!50 &2826893258585694487
 Rigidbody2D:
