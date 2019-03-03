@@ -199,6 +199,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3.7966
       objectReference: {fileID: 0}
+    - target: {fileID: 2826893258585694486, guid: c579a43fc6bc3aa47b7e574fcc03e58c,
+        type: 3}
+      propertyPath: lightUnderPlayer
+      value: 
+      objectReference: {fileID: 1552212454}
     - target: {fileID: 2826893258585694489, guid: c579a43fc6bc3aa47b7e574fcc03e58c,
         type: 3}
       propertyPath: m_MaskInteraction
@@ -1796,7 +1801,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1552212455
 MonoBehaviour:
   m_ObjectHideFlags: 0
