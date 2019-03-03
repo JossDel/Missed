@@ -114,7 +114,7 @@ public class PlayerStats : MonoBehaviour
         health = 100;
         maxHealth = 100;
         corruption = 0;
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("End");
     }
 
     float CalculateHealth()
