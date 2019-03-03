@@ -89,9 +89,7 @@ public class PlayerStats : MonoBehaviour
 
         if (_weaponChangeBuffer > 0)
         {
-            Debug.Log("inside buffer");
-            _weaponChangeBuffer -= Time.deltaTime * 100;
-            Debug.Log(_weaponChangeBuffer);
+            _weaponChangeBuffer -= Time.deltaTime * 2;
         }
 
         if (health <= 0)
@@ -131,31 +129,31 @@ public class PlayerStats : MonoBehaviour
 
     void ChangeWeapon(int weapon)
     {
-        if (_weaponChangeBuffer == 0)
+        if (_weaponChangeBuffer <= 0)
         {
             Debug.Log("weapon changing to" + weapon);
-            _weaponChangeBuffer = _weaponChangeBufferTime;
             activeWeapon = weapon;
 
-            _light.GetComponent("Is On").Equals(false);
-            _fire.GetComponent("Is On").Equals(false);
-            _electr.GetComponent("Is On").Equals(false);
+            _light.SetActive(false);
+            _fire.SetActive(false);
+            _electr.SetActive(false);
 
             if (weapon == 1)
             {
-                _light.GetComponent("Is On").Equals(true);
+                _light.SetActive(true);
                 Debug.Log("one made true");
             }
             else if (weapon == 2)
             {
-                _fire.GetComponent("Is On").Equals(true);
+                _fire.SetActive(true);
                 Debug.Log("two made true");
             }
             else if (weapon == 3)
             {
-                _electr.GetComponent("Is On").Equals(true);
+                _electr.SetActive(true);
                 Debug.Log("three made true");
             }
+            _weaponChangeBuffer = _weaponChangeBufferTime;
         }
     }
 }
