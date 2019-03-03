@@ -73,17 +73,14 @@ public class PlayerStats : MonoBehaviour
 
         if (Input.GetKeyDown("1") && activeWeapon != 1)
         {
-            Debug.Log("First Key pressed");
             ChangeWeapon(1);
         }
         else if (Input.GetKey("2") && activeWeapon != 2)
         {
-            Debug.Log("Second Key pressed");
             ChangeWeapon(2);
         }
         else if (Input.GetKey("3") && activeWeapon != 3)
         {
-            Debug.Log("Third Key pressed");
             ChangeWeapon(3);
         }
 
