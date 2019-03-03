@@ -131,7 +131,6 @@ public class PlayerStats : MonoBehaviour
     {
         if (_weaponChangeBuffer <= 0)
         {
-            Debug.Log("weapon changing to" + weapon);
             activeWeapon = weapon;
 
             _light.SetActive(false);
@@ -141,17 +140,14 @@ public class PlayerStats : MonoBehaviour
             if (weapon == 1)
             {
                 _light.SetActive(true);
-                Debug.Log("one made true");
             }
             else if (weapon == 2)
             {
                 _fire.SetActive(true);
-                Debug.Log("two made true");
             }
             else if (weapon == 3)
             {
                 _electr.SetActive(true);
-                Debug.Log("three made true");
             }
             _weaponChangeBuffer = _weaponChangeBufferTime;
         }
