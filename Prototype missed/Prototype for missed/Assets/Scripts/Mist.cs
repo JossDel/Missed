@@ -10,6 +10,8 @@ public class Mist : MonoBehaviour {
     [SerializeField] float mistAttackRate = 1f;
     private float timer;
 
+    public GameObject lightUnderPlayer;
+
 	// Use this for initialization
 	void Start () {
        
@@ -29,8 +31,8 @@ public class Mist : MonoBehaviour {
                 timer = mistAttackRate;
             }
             timer -= Time.deltaTime;
-                
-                
+
+            lightUnderPlayer.SetActive(true);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -38,6 +40,7 @@ public class Mist : MonoBehaviour {
         if (collision.CompareTag("Player"))
         {
             timer = 0;
+            lightUnderPlayer.SetActive(false);
         }
     }
 }

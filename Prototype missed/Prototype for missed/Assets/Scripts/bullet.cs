@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class bullet : MonoBehaviour
 {
-    public int damage = 1;
-    public float speed = 10f;
+    public int damage;
+    public float speed;
     Rigidbody2D rb;
     // Use this for initialization
     void Start()

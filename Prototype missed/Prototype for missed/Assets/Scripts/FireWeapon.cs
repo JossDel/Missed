@@ -14,6 +14,7 @@ public class FireWeapon : MonoBehaviour
     //secondary weapon
     private float timeBtwShots2;
     public float secondaryFireRate;
+    public float secondFireTimer = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -39,9 +40,14 @@ public class FireWeapon : MonoBehaviour
         {
             if (Input.GetButton("Fire2"))
             {
+                secondFireTimer += Time.deltaTime;
                 //code that charges the secondary fire
                 // when button is released you fire away the charged bullet
                 // resets the fire rate
+            }
+            if (Input.GetButtonUp("Fire2") && (secondFireTimer >= 2))
+            {
+                Instantiate(fireBall, firePoint.position, firePoint.rotation);
             }
         }
     }

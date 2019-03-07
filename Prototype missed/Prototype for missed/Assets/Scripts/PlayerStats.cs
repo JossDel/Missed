@@ -18,6 +18,13 @@ public class PlayerStats : MonoBehaviour
     public Slider healthbar;
     public Slider corruptionbar;
 
+    float _weaponChangeBuffer;
+    [SerializeField]
+    float _weaponChangeBufferTime = 3;
+
+    public GameObject _light;
+    public GameObject _fire;
+    public GameObject _electr;
 
     void Start()
     {
@@ -64,6 +71,24 @@ public class PlayerStats : MonoBehaviour
         healthbar.value = CalculateHealth();
         corruptionbar.value = CalculateCorruption();
 
+        if (Input.GetKeyDown("1") && activeWeapon != 1)
+        {
+            ChangeWeapon(1);
+        }
+        else if (Input.GetKey("2") && activeWeapon != 2)
+        {
+            ChangeWeapon(2);
+        }
+        else if (Input.GetKey("3") && activeWeapon != 3)
+        {
+            ChangeWeapon(3);
+        }
+
+        if (_weaponChangeBuffer > 0)
+        {
+            _weaponChangeBuffer -= Time.deltaTime * 2;
+        }
+
         if (health <= 0)
         {
             Die();
@@ -86,7 +111,7 @@ public class PlayerStats : MonoBehaviour
         health = 100;
         maxHealth = 100;
         corruption = 0;
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("End");
     }
 
     float CalculateHealth()
@@ -97,5 +122,31 @@ public class PlayerStats : MonoBehaviour
     float CalculateCorruption()
     {
         return corruption / 100f;
+    }
+
+    void ChangeWeapon(int weapon)
+    {
+        if (_weaponChangeBuffer <= 0)
+        {
+            activeWeapon = weapon;
+
+            _light.SetActive(false);
+            _fire.SetActive(false);
+            _electr.SetActive(false);
+
+            if (weapon == 1)
+            {
+                _light.SetActive(true);
+            }
+            else if (weapon == 2)
+            {
+                _fire.SetActive(true);
+            }
+            else if (weapon == 3)
+            {
+                _electr.SetActive(true);
+            }
+            _weaponChangeBuffer = _weaponChangeBufferTime;
+        }
     }
 }
