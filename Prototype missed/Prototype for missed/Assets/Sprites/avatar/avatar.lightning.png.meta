@@ -1,0 +1,1223 @@
+fileFormatVersion: 2
+guid: 2b15716b9febe294bba19ecce1616561
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: avatar.lightning_0
+    21300002: avatar.lightning_1
+    21300004: avatar.lightning_2
+    21300006: avatar.lightning_3
+    21300008: avatar.lightning_4
+    21300010: avatar.lightning_5
+    21300012: avatar.lightning_6
+    21300014: avatar.lightning_7
+    21300016: avatar.lightning_8
+    21300018: avatar.lightning_9
+    21300020: avatar.lightning_10
+    21300022: avatar.lightning_11
+    21300024: avatar.lightning_12
+    21300026: avatar.lightning_13
+    21300028: avatar.lightning_14
+    21300030: avatar.lightning_15
+    21300032: avatar.lightning_16
+    21300034: avatar.lightning_17
+    21300036: avatar.lightning_18
+    21300038: avatar.lightning_19
+    21300040: avatar.lightning_20
+    21300042: avatar.lightning_21
+    21300044: avatar.lightning_22
+    21300046: avatar.lightning_23
+    21300048: avatar.lightning_24
+    21300050: avatar.lightning_25
+    21300052: avatar.lightning_26
+    21300054: avatar.lightning_27
+    21300056: avatar.lightning_28
+    21300058: avatar.lightning_29
+    21300060: avatar.lightning_30
+    21300062: avatar.lightning_31
+    21300064: avatar.lightning_32
+    21300066: avatar.lightning_33
+    21300068: avatar.lightning_34
+    21300070: avatar.lightning_35
+    21300072: avatar.lightning_36
+    21300074: avatar.lightning_37
+    21300076: avatar.lightning_38
+    21300078: avatar.lightning_39
+    21300080: avatar.lightning_40
+    21300082: avatar.lightning_41
+    21300084: avatar.lightning_42
+    21300086: avatar.lightning_43
+    21300088: avatar.lightning_44
+    21300090: avatar.lightning_45
+    21300092: avatar.lightning_46
+    21300094: avatar.lightning_47
+    21300096: avatar.lightning_48
+    21300098: avatar.lightning_49
+    21300100: avatar.lightning_50
+    21300102: avatar.lightning_51
+    21300104: avatar.lightning_52
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: avatar.lightning_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef191db029f35cf458864237a6ba2ebf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_1
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e32ea593cc38f409b1ac1b2089ff8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_2
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd998df3535f80d4897d3044485e7495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_3
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9af9beef3715a4c97a1cacb85ee200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_4
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f24c6e58ae954742ae90d382c80fa13
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_5
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d238d0bddef1341ad1196a5ab542fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_6
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c962e9535ec5a934094b28560624e329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_7
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956c95d5ef0e7f44d9e460f8b3c35bb5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_8
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d7eeb81f62c4445a0c142976c44ef5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_9
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 290feab662017664fa226f4038a9d4a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_10
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f90ebd8b46f844aa07bc473489abc2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b9c8a8bb9ced84e9c332e6ba12f3a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_12
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391699e3cad55b14d8bfea70b263deea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_13
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f441c1f520f16a54aa2f860b4ccea229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_14
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af333ea15c33db44a1a6e8ef1dd6f35
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_15
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d46236e6eb03f4c8bd5a67958bd22e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_16
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974ad58495aaf56438b96c7d53ad5f9f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_17
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5eaa28464bda54f8c853968c662797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_18
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b406cff4597daae43a6f16136ac1840a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_19
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2be87385a6f1f44ae154324680a9ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_20
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ca998fb5ec0084fa3a6db7a5945d62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_21
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b649d6c728a1854a9ea1c4609c412d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a70a5f7a870101469dda20d05766299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_23
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88608ce721741af4aac0d54bcd0ba8a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_24
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8ce34af47673043863d4bcad8c892f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_25
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3dcaea2855dd7e498cadf5f4751a374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_26
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e308d042ad3a62a4fbcd9248895fb2ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_27
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec645701d5c52dd47a0952d366a84d0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_28
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb6590d51302e547a5c8cf8cce501fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_29
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560634a37512b324e9d5974cbd86264b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_30
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03275256386b01b48b026d48424beb07
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_31
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9503deed804956142b1d818647e499a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_32
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5dfedf4552e5d4394baf12a5299b9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a26a047b2beee14ca8bd447990cbe7c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_34
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76b27d45ffed01478d9772b55a82f9c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_35
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a416a3ba4d96b49aa6ca4eed97a72f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_36
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e246ddfb0ef334ca074a919293a50c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_37
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d157a96b0719a1499179525d45bd081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_38
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a81b706aea37341962c7b8232bd12c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_39
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a355793c638754cb00a75f5a1bc0c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_40
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e021da6e1808bc54f8e9ba4c76e29171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_41
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be42741838315a4484be2b8cb95cb28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_42
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b00b9a844738074ea8c777fdc377032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_43
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deefba278e15a8e4681b533302dac4a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5370433c9fe0e09499b1cdf20978bb12
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_45
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9f219a442bc894f8ae7010a2bd4269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_46
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c95603bd54ed04a983c82bc397619a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_47
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9f41e519333a5409622114180c6d3a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_48
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548da059e54f4a942b5a4ba327999cac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_49
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8940d57412b1d7d4abcdbccacdb7ea2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_50
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b129842428c4a942b0e4994ccb16e90
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_51
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9b8f2c87aef9a44aaa45d71dcadfa3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.lightning_52
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b955b2f49497354984389f050e30b4e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5098de0e2c8ec1b41b3e6f810c252abf
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

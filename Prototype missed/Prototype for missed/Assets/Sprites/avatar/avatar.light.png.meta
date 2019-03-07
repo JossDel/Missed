@@ -1,0 +1,1223 @@
+fileFormatVersion: 2
+guid: 99b4a975dd900a742b16a2fa0623655b
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: avatar.light_0
+    21300002: avatar.light_1
+    21300004: avatar.light_2
+    21300006: avatar.light_3
+    21300008: avatar.light_4
+    21300010: avatar.light_5
+    21300012: avatar.light_6
+    21300014: avatar.light_7
+    21300016: avatar.light_8
+    21300018: avatar.light_9
+    21300020: avatar.light_10
+    21300022: avatar.light_11
+    21300024: avatar.light_12
+    21300026: avatar.light_13
+    21300028: avatar.light_14
+    21300030: avatar.light_15
+    21300032: avatar.light_16
+    21300034: avatar.light_17
+    21300036: avatar.light_18
+    21300038: avatar.light_19
+    21300040: avatar.light_20
+    21300042: avatar.light_21
+    21300044: avatar.light_22
+    21300046: avatar.light_23
+    21300048: avatar.light_24
+    21300050: avatar.light_25
+    21300052: avatar.light_26
+    21300054: avatar.light_27
+    21300056: avatar.light_28
+    21300058: avatar.light_29
+    21300060: avatar.light_30
+    21300062: avatar.light_31
+    21300064: avatar.light_32
+    21300066: avatar.light_33
+    21300068: avatar.light_34
+    21300070: avatar.light_35
+    21300072: avatar.light_36
+    21300074: avatar.light_37
+    21300076: avatar.light_38
+    21300078: avatar.light_39
+    21300080: avatar.light_40
+    21300082: avatar.light_41
+    21300084: avatar.light_42
+    21300086: avatar.light_43
+    21300088: avatar.light_44
+    21300090: avatar.light_45
+    21300092: avatar.light_46
+    21300094: avatar.light_47
+    21300096: avatar.light_48
+    21300098: avatar.light_49
+    21300100: avatar.light_50
+    21300102: avatar.light_51
+    21300104: avatar.light_52
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: avatar.light_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d022dea42ebfd4c478173c63c1fb58bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_1
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec8ce68969dbac41b3737c41d639a21
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_2
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40dd8a96f505ce743a034f22193ee985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_3
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841f9fc1be72e9c43a3894526270839a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_4
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a59774f0ffafb24083384ab12bc361e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_5
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641d08406fcb3374e875bb2f9d3691f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_6
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69bae146bcdbe240a646de47012ec1c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_7
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b5d4cfb59a0d544a61b1b96ea96bed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_8
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35a8ba100029f9428a106f37ab343a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_9
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609b7381a17f6d4498e6b5ab7c57f37f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_10
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04d3123bc3e9054ba1e30531e4bd060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c799b938a21e5474fb6a73fdd49ebb78
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_12
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b29ae6896705ee4fa81eb1897a0c7a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_13
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b58af96a7227741a991f65ce70ef2c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_14
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf27169b1d1c4184ea526909a83f8f4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_15
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e49ebc012a2f574fb67a6e2002c58b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_16
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e502784b4eb7330459cbad3c90e3558e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_17
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746dd71463849dc459156abeaa9be9ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_18
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e54b9140a887842af2e818dbf2cb00
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_19
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc7c82ebfefb5b4e89d8ab4d479ec4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_20
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d20d23f73e53ca42b006f09598fc554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_21
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b959e2f7ce875e94db92444d5a6dedb8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1cfc7e92135c94fb34f8d54efce6f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_23
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a99e83a741a3574087dee4d24faa055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_24
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd35618791e3ce45a829c4bf9285a84
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_25
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58517e7ffd947874099c39de78591fb4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_26
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60303481b6e21241a8215542e34e1c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_27
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53fb7e90c37b9bb41aed9fa92de68f08
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_28
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa3983a90ac78441bd3018f67e99dff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_29
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db6c20700ce3fc64bbbdc79d2c69653b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_30
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efbdcbaf3306190428fe6eb3409334bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_31
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b5f3e739b14a545927edb07dae16cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_32
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 080b42956d87a344caa8491e95bde5f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8f97aac5ca2d24ab2afcac2f312755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_34
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a74f736abc8ad43898051d4912182c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_35
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be61df130f8d6c64d80fee41e8a569e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_36
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3f61159960523409110a1b1e4b8dd3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_37
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef96b35b0dd73a458a821fdf9f4fd36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_38
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6d7a41c3fcc024d9d869a796bc8299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_39
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23852ec8cea35f4bb4b3dc4d478fce5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_40
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72bb16ad5594976449a733956c121309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_41
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8021b39914452174c9327e88a4787237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_42
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f2292322ac48440b64f89f952b7902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_43
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4dba49db3c5bd4e984cf46135991af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c47eb4c076272046b3ca413ed3ab925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_45
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e058b8ab014f3345bf4f2ddc3cfde57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_46
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837b4b125c0bd21428f9d102bb88740e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_47
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e62ef69d799dd4a8bf5d7cba78770a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_48
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb59f925c5677e46b96d9f34633bdf7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_49
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf888ece53eaf3248a4b34e0feba5492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_50
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c411b3966f78b64c9dd672cba663afd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_51
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1ba39b31320ac47a1afffd1b987963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: avatar.light_52
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772496500f246b04bb046d2cfa6c1a7c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5c59efa55977ac04cac0a21a84f0188e
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
