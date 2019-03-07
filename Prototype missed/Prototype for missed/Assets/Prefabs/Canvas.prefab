@@ -112,6 +112,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorruptionBar
       objectReference: {fileID: 0}
+    - target: {fileID: 4257639218079785600, guid: 0387fc3b773e496499452a473bf94ca9,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4257639218079785600, guid: 0387fc3b773e496499452a473bf94ca9,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4257639218079785600, guid: 0387fc3b773e496499452a473bf94ca9,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4257639218408075090, guid: 0387fc3b773e496499452a473bf94ca9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -216,21 +231,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4257639218079785600, guid: 0387fc3b773e496499452a473bf94ca9,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4257639218079785600, guid: 0387fc3b773e496499452a473bf94ca9,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4257639218079785600, guid: 0387fc3b773e496499452a473bf94ca9,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0387fc3b773e496499452a473bf94ca9, type: 3}
