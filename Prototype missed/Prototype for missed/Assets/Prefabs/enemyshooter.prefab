@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1222905896}
   - component: {fileID: 1222905895}
   - component: {fileID: 1222905894}
-  - component: {fileID: 6195550459985425}
+  - component: {fileID: 4256831119437215101}
   m_Layer: 0
   m_Name: enemyshooter
   m_TagString: EnemyShooter
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c1adcc207cf8bbf47bb153369fd77ca7, type: 3}
   m_Color: {r: 0.6037736, g: 0.31612673, b: 0.31612673, a: 1}
   m_FlipX: 0
@@ -139,8 +139,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 30
---- !u!58 &6195550459985425
-CircleCollider2D:
+--- !u!70 &4256831119437215101
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -152,9 +152,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.1816123, y: -0.084959306}
-  serializedVersion: 2
-  m_Radius: 0.48325238
+  m_Offset: {x: -0.25003052, y: -0.0013764927}
+  m_Size: {x: 0.69722205, y: 1.1285481}
+  m_Direction: 0
 --- !u!1 &1851098676
 GameObject:
   m_ObjectHideFlags: 0

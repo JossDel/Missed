@@ -98,8 +98,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   rb: {fileID: 2826893258585694487}
-  amount: 0.5
-  mistAttackRate: 0.5
+  amount: 0.4
+  mistAttackRate: 0.75
+  lightUnderPlayer: {fileID: 0}
 --- !u!50 &2826893258585694487
 Rigidbody2D:
   serializedVersion: 4
@@ -262,8 +263,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7.8
-  rb: {fileID: 0}
-  secondmist: {fileID: 0}
 --- !u!1 &8710420688952596235
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,5 +378,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7.9
-  rb: {fileID: 0}
-  secondmist: {fileID: 0}
