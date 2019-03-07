@@ -4,33 +4,38 @@ using UnityEngine;
 
 public class FadeOut : MonoBehaviour
 {
-    
+    GameObject mist;
+    GameObject lightUnderPlayer;
+
     public float fadeOutTime = 2f;
-    // Start is called before the first frame update
+
     void Start()
     {
-            StartCoroutine(SpriteFadeOut(GetComponent<SpriteRenderer>()));
+        mist = GameObject.Find("MIST");
+        lightUnderPlayer = GameObject.Find("Point Light");
+        StartCoroutine(SpriteFadeOut(GetComponent<SpriteRenderer>()));
     }
 
- 
-        IEnumerator SpriteFadeOut(SpriteRenderer _sprite)
+    IEnumerator SpriteFadeOut(SpriteRenderer _sprite)
+    {
+        Color tmpColor = _sprite.color;
+
+        while (tmpColor.a > 0f)
         {
-                Color tmpColor = _sprite.color;
+            tmpColor.a -= Time.deltaTime / fadeOutTime;
+            _sprite.color = tmpColor;
 
-                while (tmpColor.a > 0f)
-                {
-                    tmpColor.a -= Time.deltaTime / fadeOutTime;
-                    _sprite.color = tmpColor;
+            if (tmpColor.a <= 0f)
+                tmpColor.a = 0.0f;
 
-                    if (tmpColor.a <= 0f)
-                        tmpColor.a = 0.0f;
-
-                    yield return null;
-                }
-                _sprite.color = tmpColor;
+            yield return null;
         }
-    
+        _sprite.color = tmpColor;
 
-    
-    
+        mist.SetActive(false);
+        if (lightUnderPlayer != null)
+        {
+            lightUnderPlayer.SetActive(false);
+        }
+    }
 }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Walls
+  - EnemyShooter
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Mist
   - 
   - PostProcessing
   - 

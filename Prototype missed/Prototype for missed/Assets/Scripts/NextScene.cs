@@ -26,6 +26,7 @@ public class NextScene : MonoBehaviour
     }
     public void NextRoom()
     {
+        GameObject.Find("GameManager").GetComponent<GameManager>().Save();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

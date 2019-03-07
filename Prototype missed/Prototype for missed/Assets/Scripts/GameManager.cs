@@ -9,8 +9,11 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        prefChild = enemiesPrefab.transform.GetChild(Random.Range(0, enemiesPrefab.transform.childCount)).gameObject;
-        Instantiate(prefChild, Vector3.zero, new Quaternion());
+        if (enemiesPrefab != null)
+        {
+            prefChild = enemiesPrefab.transform.GetChild(Random.Range(0, enemiesPrefab.transform.childCount)).gameObject;
+            Instantiate(prefChild, Vector3.zero, new Quaternion());
+        }
     }
 
     void Start()
@@ -41,10 +44,6 @@ public class GameManager : MonoBehaviour
         playerStats.corruption = PlayerPrefs.GetFloat("corruption", playerStats.corruption);
         playerStats.movementSpeed = PlayerPrefs.GetFloat("movementSpeed", playerStats.movementSpeed);
         playerStats.activeWeapon = PlayerPrefs.GetInt("activeWeapon", playerStats.activeWeapon);
-    }
-    private void OnDestroy()
-    {
-        Save();
     }
 }
 
