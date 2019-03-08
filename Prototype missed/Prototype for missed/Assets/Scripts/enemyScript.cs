@@ -15,7 +15,7 @@ public class enemyScript : MonoBehaviour {
     }
     void Die()
     {
+        Destroy(gameObject);                        
         GameObject.Find("EnemyDetector").GetComponent<Detection>().OnEnemyDestroyed();
-        Destroy(gameObject);
     }
 }

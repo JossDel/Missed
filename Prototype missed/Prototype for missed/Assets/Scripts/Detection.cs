@@ -49,7 +49,7 @@ public class Detection : MonoBehaviour
 
     public void OnEnemyDestroyed()
     {
-        numberOfEnemies--;
+        numberOfEnemies -= 1 ;
     }
 } 
 
