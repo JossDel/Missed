@@ -16,8 +16,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - walls
+  - Lights
   - Mist
   - 
   - PostProcessing
