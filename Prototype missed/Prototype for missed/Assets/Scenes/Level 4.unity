@@ -10465,7 +10465,7 @@ PrefabInstance:
         type: 3}
       propertyPath: enemiesPrefab
       value: 
-      objectReference: {fileID: 187065603652775317, guid: 74721372456ad2842a3880d50561ac3c,
+      objectReference: {fileID: 6484147352191233608, guid: 4ab564710ccf76749abf5b84dd58014d,
         type: 3}
     - target: {fileID: 8977801700059044564, guid: 9af9dcdb85ca1864991dcc9c7b8d2cb1,
         type: 3}
