@@ -45,7 +45,7 @@ public class weapom : MonoBehaviour
         }
         if (bulletsfired == bulletAmmount)          // If you shot all secondary bullets
         {
-            if (secondaryCooldown <= 0)
+            if (secondaryCooldown <= 0.1)
             {
                 secondaryCooldown = fireCooldown;
                 bulletsfired = 0;
