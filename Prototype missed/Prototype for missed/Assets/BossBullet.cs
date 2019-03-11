@@ -9,11 +9,12 @@ public class BossBullet : MonoBehaviour
 
     private Transform player;
     private Vector2 target;
-    
+    private float timerforfire;
 
     // Start is called before the first frame update
     void Start()
     {
+        timerforfire = 1.5f;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         target = new Vector2(player.position.x, player.position.y);
     }
@@ -22,6 +23,20 @@ public class BossBullet : MonoBehaviour
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+        if (transform.position.x == target.x && transform.position.y == target.y)
+        {
+            timerforfire -= Time.deltaTime;
+
+            if (timerforfire <= 0)
+            {
+            Destroy(gameObject);
+
+            }
+            else
+            {
+                timerforfire -= Time.deltaTime;
+            }
+        }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {

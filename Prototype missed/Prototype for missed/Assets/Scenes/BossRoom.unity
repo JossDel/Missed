@@ -2838,7 +2838,7 @@ MonoBehaviour:
     type: 3}
   player: {fileID: 0}
   firePoint: {fileID: 896117705}
-  startTimeBtwShots: 1
+  startTimeBtwShots: 3
 --- !u!212 &558741106
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2916,7 +2916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d94f6b58dc46d3048b211b5f3c84d22d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 50
+  Health: 500
 --- !u!1001 &659337058
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2927,7 +2927,7 @@ PrefabInstance:
     - target: {fileID: 7470685406463912644, guid: 19a029da6b5828a40bbd8281bdcca12e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7470685406463912696, guid: 19a029da6b5828a40bbd8281bdcca12e,
         type: 3}
@@ -3474,7 +3474,7 @@ PrefabInstance:
     - target: {fileID: 80914400534018899, guid: 8f71c261f144b8742a528287f382a33e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 80914400534018911, guid: 8f71c261f144b8742a528287f382a33e,
         type: 3}
@@ -3604,27 +3604,27 @@ PrefabInstance:
     - target: {fileID: 80914399871864705, guid: 8f71c261f144b8742a528287f382a33e,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.819
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 80914399871864705, guid: 8f71c261f144b8742a528287f382a33e,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 80914399871864705, guid: 8f71c261f144b8742a528287f382a33e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 80914400192313634, guid: 8f71c261f144b8742a528287f382a33e,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.787
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 80914400192313634, guid: 8f71c261f144b8742a528287f382a33e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f71c261f144b8742a528287f382a33e, type: 3}
@@ -4426,17 +4426,17 @@ PrefabInstance:
     - target: {fileID: 4336674134168717784, guid: 0ca256449ef177e4a94f21f50372e673,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.593
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4336674134168717784, guid: 0ca256449ef177e4a94f21f50372e673,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4336674134168717784, guid: 0ca256449ef177e4a94f21f50372e673,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ca256449ef177e4a94f21f50372e673, type: 3}
@@ -4645,7 +4645,7 @@ MonoBehaviour:
   corruption: 0
   movementSpeed: 18
   activeWeapon: 1
-  dps: 0.5
+  progress: 0
   healthbar: {fileID: 0}
   corruptionbar: {fileID: 0}
   _weaponChangeBufferTime: 3
@@ -4692,7 +4692,7 @@ MonoBehaviour:
   corruption: 0
   movementSpeed: 15.97
   activeWeapon: 1
-  dps: 0.5
+  progress: 0
   healthbar: {fileID: 102586315}
   corruptionbar: {fileID: 733718166}
   _weaponChangeBufferTime: 3
