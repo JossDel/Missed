@@ -30,21 +30,16 @@ public class PlayerStats : MonoBehaviour
     {
         gameManager = GameObject.Find("GameManager");
         gameManagerScript = gameManager.GetComponent<GameManager>();
+        gameManagerScript.Load();
 
         ChangeWeapon(activeWeapon);
         healthbar.value = CalculateHealth();
         corruptionbar.value = CalculateCorruption();
     }
-
-    bool once = true;
+    
 
     void Update()
     {
-        if (once)
-        {
-            gameManagerScript.Load();
-            once = false;
-        }
 
         if (corruption >= 100)
         {
