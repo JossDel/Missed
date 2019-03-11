@@ -90,6 +90,8 @@ public class weapom : MonoBehaviour
 
     float CooldownCalculate()
     {
+        if (secondaryCooldown == fireCooldown && bulletsfired > 0)
+            return 1;
         if (secondaryCooldown == fireCooldown)
             return 0;
         return (float)secondaryCooldown / (float)fireCooldown;
