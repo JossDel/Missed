@@ -180,7 +180,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 900
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 4.5000005, y: 4.5000005, z: 0}
   m_MaxChunkCount: 16
@@ -1524,7 +1524,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92462113}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 345.6, y: -19.6, z: 0}
+  m_LocalPosition: {x: 345.6, y: -24.099998, z: 0}
   m_LocalScale: {x: 1, y: 7.3613744, z: 1}
   m_Children: []
   m_Father: {fileID: 916349432}
@@ -1770,7 +1770,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 222912755}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 284.3, y: -12.1, z: 0}
+  m_LocalPosition: {x: 284.3, y: -16.6, z: 0}
   m_LocalScale: {x: 1.3260937, y: 0.7949596, z: 1}
   m_Children: []
   m_Father: {fileID: 916349432}
@@ -2316,7 +2316,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519297858}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 407.7, y: -12.1, z: 0}
+  m_LocalPosition: {x: 407.7, y: -16.599998, z: 0}
   m_LocalScale: {x: 1.3260937, y: 0.6573322, z: 1}
   m_Children: []
   m_Father: {fileID: 916349432}
@@ -4907,7 +4907,7 @@ MonoBehaviour:
   corruption: 0
   movementSpeed: 18
   activeWeapon: 1
-  dps: 0.5
+  progress: 0
   healthbar: {fileID: 0}
   corruptionbar: {fileID: 0}
   _weaponChangeBufferTime: 3
@@ -4954,7 +4954,7 @@ MonoBehaviour:
   corruption: 0
   movementSpeed: 15.97
   activeWeapon: 1
-  dps: 0.5
+  progress: 0
   healthbar: {fileID: 1191333080}
   corruptionbar: {fileID: 1116097882}
   _weaponChangeBufferTime: 3
@@ -6375,7 +6375,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1977365047}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 160.4, y: -11.5, z: 0}
+  m_LocalPosition: {x: 160.4, y: -15.999998, z: 0}
   m_LocalScale: {x: 1.1787499, y: 1.3325565, z: 1}
   m_Children: []
   m_Father: {fileID: 916349432}

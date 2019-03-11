@@ -10,7 +10,7 @@ public class PlayerStats : MonoBehaviour
     public float corruption = 0;
     public float movementSpeed = 2.5f;
     public int activeWeapon = 1;
-    public float dps = 0.5f;
+    public int progress = 0;
 
     GameObject gameManager;
     GameManager gameManagerScript;
@@ -101,6 +101,7 @@ public class PlayerStats : MonoBehaviour
         {
             Die();
         }
+        corruption = Mathf.Clamp(corruption, 0, 100);
     }
 
     public void takeDamage(int damage)

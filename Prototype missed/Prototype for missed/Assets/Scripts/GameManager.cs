@@ -31,10 +31,10 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("activeWeapon", playerStats.activeWeapon);
     }
 
-    public void Save(string room)
+    public void Save(int room)
     {
         Save();
-        PlayerPrefs.SetString("progress", room);
+        PlayerPrefs.SetInt("progress", room);
     }
 
     public void Load()
@@ -44,6 +44,22 @@ public class GameManager : MonoBehaviour
         playerStats.corruption = PlayerPrefs.GetFloat("corruption", playerStats.corruption);
         playerStats.movementSpeed = PlayerPrefs.GetFloat("movementSpeed", playerStats.movementSpeed);
         playerStats.activeWeapon = PlayerPrefs.GetInt("activeWeapon", playerStats.activeWeapon);
+        playerStats.progress = PlayerPrefs.GetInt("progress", playerStats.progress);
+    }
+
+    public void SaveReset()
+    {
+        PlayerPrefs.SetInt("health", 100);
+        PlayerPrefs.SetInt("maxHealth", 100);
+        PlayerPrefs.SetFloat("corruption", 0);
+        PlayerPrefs.SetFloat("movementSpeed", playerStats.movementSpeed);
+        PlayerPrefs.SetInt("activeWeapon", 1);
+    }
+
+    public void HardSaveReset()
+    {
+        SaveReset();
+        PlayerPrefs.SetInt("progress", 0);
     }
 }
 

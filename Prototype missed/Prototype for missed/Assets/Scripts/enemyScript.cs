@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class enemyScript : MonoBehaviour {
 
@@ -15,6 +16,12 @@ public class enemyScript : MonoBehaviour {
     }
     void Die()
     {
+        if (gameObject.name == "Bossarmsup (1)")
+        {
+            GameObject.Find("GameManager").GetComponent<GameManager>().HardSaveReset();
+            SceneManager.LoadScene(0);
+
+        }
         Destroy(gameObject);                        
         GameObject.Find("EnemyDetector").GetComponent<Detection>().OnEnemyDestroyed();
     }

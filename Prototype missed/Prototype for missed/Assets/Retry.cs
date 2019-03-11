@@ -5,18 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class Retry : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if(Input.GetButtonDown("Fire1"))
         {
-            SceneManager.LoadScene(0);
+            if (GameObject.Find("Player").GetComponent<PlayerStats>().progress != 0)
+            {
+                GameObject.Find("GameManager").GetComponent<GameManager>().SaveReset();
+                SceneManager.LoadScene("Checkpoint " + GameObject.Find("Player").GetComponent<PlayerStats>().progress);
+            }
+            else
+                SceneManager.LoadScene("Level 1");
         }
         
     }
