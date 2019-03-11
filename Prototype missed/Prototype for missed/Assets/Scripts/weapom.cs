@@ -43,11 +43,24 @@ public class weapom : MonoBehaviour
         {
             timeBtwShots -= Time.deltaTime;
         }
-        if (bulletsfired != bulletAmmount)          // If you have more secondary bullets to shoot
+        if (bulletsfired == bulletAmmount)          // If you shot all secondary bullets
+        {
+            if (secondaryCooldown <= 0)
+            {
+                secondaryCooldown = fireCooldown;
+                bulletsfired = 0;
+            }
+            else
+            {
+                secondaryCooldown -= Time.deltaTime;
+            }
+        }
+        else
         {
             if (timeBtwShots2 <= 0)
             {
-                if(bulletsfired == 0){
+                if (bulletsfired == 0)
+                {
                     if (Input.GetButton("Fire2"))
                     {
                         Instantiate(secondBullet, firePoint.position, firePoint.rotation);
@@ -66,17 +79,6 @@ public class weapom : MonoBehaviour
             {
                 timeBtwShots2 -= Time.deltaTime;
             }
-        } else
-        {
-            if (secondaryCooldown <= 0)
-            {
-                secondaryCooldown = fireCooldown;
-                bulletsfired = 0;
-            }
-            else
-            {
-                secondaryCooldown -= Time.deltaTime;
-            }
         }
         cooldown.value = CooldownCalculate();
     }
@@ -88,6 +90,8 @@ public class weapom : MonoBehaviour
 
     float CooldownCalculate()
     {
-        return (float)bulletsfired / (float)bulletAmmount;
+        if (secondaryCooldown == fireCooldown)
+            return 0;
+        return (float)secondaryCooldown / (float)fireCooldown;
     }
 }
