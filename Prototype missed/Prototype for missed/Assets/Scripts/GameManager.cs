@@ -39,6 +39,8 @@ public class GameManager : MonoBehaviour
 
     public void Load()
     {
+        player = GameObject.Find("Player");
+        playerStats = player.GetComponent<PlayerStats>();
         playerStats.health = PlayerPrefs.GetInt("health", playerStats.health);
         playerStats.maxHealth = PlayerPrefs.GetInt("maxHealth", playerStats.maxHealth);
         playerStats.corruption = PlayerPrefs.GetFloat("corruption", playerStats.corruption);

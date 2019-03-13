@@ -33,8 +33,8 @@ public class PlayerStats : MonoBehaviour
         gameManagerScript.Load();
 
         
-            if (SceneManager.GetActiveScene().name == "TitleScreen")
-                return;
+        if (SceneManager.GetActiveScene().name == "TitleScreen" || SceneManager.GetActiveScene().name == "End")
+            return;
         ChangeWeapon(activeWeapon);
         healthbar.value = CalculateHealth();
         corruptionbar.value = CalculateCorruption();
@@ -43,9 +43,9 @@ public class PlayerStats : MonoBehaviour
 
     void Update()
     {
-        
-            if (SceneManager.GetActiveScene().name == "TitleScreen")
-                return;
+
+        if (SceneManager.GetActiveScene().name == "TitleScreen" || SceneManager.GetActiveScene().name == "End")
+            return;
 
         if (corruption >= 100)
         {
