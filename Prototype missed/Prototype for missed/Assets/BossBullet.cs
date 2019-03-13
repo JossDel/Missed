@@ -14,7 +14,7 @@ public class BossBullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timerforfire = 1.5f;
+        timerforfire = 2f;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         target = new Vector2(player.position.x, player.position.y);
     }

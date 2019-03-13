@@ -18,4 +18,9 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+    public void NewGame()
+    {
+        GameObject.Find("GameManager").GetComponent<GameManager>().HardSaveReset();
+        SceneManager.LoadScene("Level 1");
+    }
 }
