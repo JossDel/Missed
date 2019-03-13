@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 4167796200642746287}
   - component: {fileID: 4167796200642746272}
   - component: {fileID: 4167796200642746273}
+  - component: {fileID: 1907534830639602492}
+  - component: {fileID: 7535291356523666633}
   - component: {fileID: 4167796200642746274}
   - component: {fileID: 4167796200642746275}
   m_Layer: 0
@@ -152,6 +154,43 @@ MonoBehaviour:
   fireRate: 0.5
   secondaryFireRate: 0.09
   fireCooldown: 3
+--- !u!114 &1907534830639602492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4167796200642746276}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87690dcc058353f41ba7689cae0bb511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireBall: {fileID: 8607296050508564201, guid: 53b9d6ea687bbc14483108cb4531c7a5,
+    type: 3}
+  firePoint: {fileID: 4167796201928394750}
+  fireRate: 0.85
+  secondaryFireRate: 0
+  secondFireTimer: 0
+--- !u!114 &7535291356523666633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4167796200642746276}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dda52d184c5865445ad9edb8bccefc78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 4167796201928394750}
+  lightningPrefab: {fileID: 0}
+  lightFieldPrefab: {fileID: 0}
+  cooldown: {fileID: 0}
+  fireRate: 0
+  secondaryFireRate: 0
+  fireCooldown: 2
 --- !u!114 &4167796200642746274
 MonoBehaviour:
   m_ObjectHideFlags: 0

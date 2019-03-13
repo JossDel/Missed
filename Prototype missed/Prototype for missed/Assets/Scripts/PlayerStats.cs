@@ -144,17 +144,27 @@ public class PlayerStats : MonoBehaviour
             _fire.SetActive(false);
             _electr.SetActive(false);
 
+            transform.GetComponentInParent<weapom>().enabled = false;
+            transform.GetComponentInParent<FireWeapon>().enabled = false;
+            transform.GetComponentInParent<ThunderWeapon>().enabled = false;
+
             if (weapon == 1)
             {
                 _light.SetActive(true);
+
+                transform.GetComponentInParent<weapom>().enabled = true;
             }
             else if (weapon == 2)
             {
                 _fire.SetActive(true);
+
+                transform.GetComponentInParent<FireWeapon>().enabled = true;
             }
             else if (weapon == 3)
             {
                 _electr.SetActive(true);
+
+                transform.GetComponentInParent<ThunderWeapon>().enabled = true;
             }
             _weaponChangeBuffer = _weaponChangeBufferTime;
         }

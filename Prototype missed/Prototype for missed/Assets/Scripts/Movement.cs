@@ -2,7 +2,7 @@
 
 public class Movement : PlayerStats
 {
-    public Rigidbody2D rb;
+    Rigidbody2D rb;
     private Vector2 moveVeocity;
 
     private void Start()
