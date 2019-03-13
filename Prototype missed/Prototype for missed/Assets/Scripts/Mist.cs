@@ -54,6 +54,8 @@ public class Mist : MonoBehaviour {
 
             collision.GetComponent<SpriteRenderer>().color = new Color(closer / 255f, closer / 255f, closer / 255f, opac / 255f);
 
+            if (collision.transform.childCount != 4)
+                return;
             if (collision.transform.GetChild(2) != null || collision.transform.GetChild(3) != null)
             {
                 collision.transform.GetChild(2).gameObject.SetActive(true);
@@ -76,6 +78,8 @@ public class Mist : MonoBehaviour {
         {
             collision.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
 
+            if (collision.transform.childCount != 4)
+                return;
             if (collision.transform.GetChild(2) != null && collision.transform.GetChild(3) != null)
             {
                 collision.transform.GetChild(2).gameObject.SetActive(false);

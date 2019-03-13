@@ -20,9 +20,10 @@ public class enemyScript : MonoBehaviour {
         {
             GameObject.Find("GameManager").GetComponent<GameManager>().HardSaveReset();
             SceneManager.LoadScene(0);
+            return;
 
         }
-        Destroy(gameObject);                        
         GameObject.Find("EnemyDetector").GetComponent<Detection>().OnEnemyDestroyed();
+        Destroy(gameObject);                        
     }
 }
