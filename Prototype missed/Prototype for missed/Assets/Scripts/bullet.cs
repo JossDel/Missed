@@ -14,7 +14,7 @@ public class bullet : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.Find("Player");
+        player = GameObject.FindGameObjectWithTag("Player");
 
         if (player.GetComponent<PlayerStats>().activeWeapon == 1)
         {

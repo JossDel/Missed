@@ -25,11 +25,11 @@ void FixedUpdate()
         mousepos = Camera.main.ScreenToWorldPoint(mousepos);
 
         Vector2 direction = new Vector2(
-            mousepos.x - transform.position.x,
-            mousepos.y - transform.position.y
+            mousepos.x - transform.GetChild(0).position.x,
+            mousepos.y - transform.GetChild(0).position.y
             );
 
-        transform.up = direction;
+        transform.GetChild(0).up = direction;
 
     }
 }
