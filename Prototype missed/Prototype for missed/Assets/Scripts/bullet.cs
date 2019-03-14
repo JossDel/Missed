@@ -5,15 +5,38 @@ using UnityEngine;
 public class bullet : MonoBehaviour
 {
     public int damage;
+    public int maxFireDamage;
     public float speed;
     Rigidbody2D rb;
 
-    float r, g, b;
+    int tempDamage;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = transform.up * speed;
+        if(weapom.FindObjectOfType<weapom>().isActiveAndEnabled)
+            rb.velocity = transform.up * speed;
+    }
+
+    void Update()
+    {
+        if (FireWeapon.FindObjectOfType<FireWeapon>().isActiveAndEnabled && !FireWeapon.FindObjectOfType<FireWeapon>().charging)
+        {
+            rb.velocity = transform.up * speed;
+            damage = tempDamage;
+            transform.GetComponent<Deathbytime>().enabled = true;
+        }
+        if (FireWeapon.FindObjectOfType<FireWeapon>().isActiveAndEnabled && FireWeapon.FindObjectOfType<FireWeapon>().charging)
+        {
+            transform.localScale = FireWeapon.FindObjectOfType<FireWeapon>().BulScale();
+            tempDamage = CalculateDamage();
+            Debug.Log(tempDamage);
+        }
+    }
+
+    int CalculateDamage()
+    {
+        return Mathf.CeilToInt( Mathf.Lerp(damage, maxFireDamage, FireWeapon.FindObjectOfType<FireWeapon>().DamagePerc()));
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
