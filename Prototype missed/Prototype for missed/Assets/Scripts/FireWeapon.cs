@@ -13,6 +13,7 @@ public class FireWeapon : MonoBehaviour
     private float timeBtwShots;
     public float fireRate;
 
+    [HideInInspector]
     public bool charging = false;
     float chargingTime;
     readonly float chargingLimit = 2f;

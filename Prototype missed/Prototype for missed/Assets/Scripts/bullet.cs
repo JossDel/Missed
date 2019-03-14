@@ -36,7 +36,7 @@ public class bullet : MonoBehaviour
 
     int CalculateDamage()
     {
-        return Mathf.CeilToInt( Mathf.Lerp(damage, maxFireDamage, FireWeapon.FindObjectOfType<FireWeapon>().DamagePerc()));
+        return Mathf.RoundToInt( Mathf.Lerp(damage, maxFireDamage, FireWeapon.FindObjectOfType<FireWeapon>().DamagePerc()));
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
