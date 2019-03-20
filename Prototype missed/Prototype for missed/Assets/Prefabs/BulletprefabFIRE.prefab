@@ -158,6 +158,12 @@ PrefabInstance:
       propertyPath: maxFireDamage
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 114999166205502496, guid: 12eeeac5913922c44a5cbc91c6447ec1,
+        type: 3}
+      propertyPath: poof
+      value: 
+      objectReference: {fileID: 8287898283612798433, guid: aa7af2403b0e97c41921df79d7c5f41a,
+        type: 3}
     - target: {fileID: 6782408493712096810, guid: 12eeeac5913922c44a5cbc91c6447ec1,
         type: 3}
       propertyPath: m_Enabled
