@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class enemybullet : MonoBehaviour {
 
+    public Animator anim;
+
     public float speed = 5f;
     public int damage = 5;
 
@@ -47,6 +49,7 @@ public class enemybullet : MonoBehaviour {
 
     void DestroyProjectile()
     {
-        Destroy(gameObject);
+        anim.SetTrigger("LocReach");
+        //Destroy(gameObject);
     }
 }

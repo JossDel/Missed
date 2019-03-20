@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemyshhoterboi : MonoBehaviour {
 
+    public Transform shootPoint;
     public float speed;
     public float stopinDinstance;
     public float retreatDistance;
@@ -46,7 +47,7 @@ public class Enemyshhoterboi : MonoBehaviour {
 
             if (timeBtwShots <= 0)
             {
-                Instantiate(projetile, transform.position, Quaternion.identity);
+                Instantiate(projetile, shootPoint.position, shootPoint.rotation);
                 startTimeBtwShots = Random.Range(minReload, maxReload);
                 timeBtwShots = startTimeBtwShots;
             } else
@@ -55,4 +56,5 @@ public class Enemyshhoterboi : MonoBehaviour {
             }
         }
 	}
+    
 }
