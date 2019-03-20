@@ -153,7 +153,7 @@ MonoBehaviour:
   bulletAmmount: 8
   fireRate: 0.5
   secondaryFireRate: 0.09
-  fireCooldown: 3
+  fireCooldown: 5
 --- !u!114 &1907534830639602492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,12 +166,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87690dcc058353f41ba7689cae0bb511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireBall: {fileID: 8607296050508564201, guid: 53b9d6ea687bbc14483108cb4531c7a5,
-    type: 3}
   firePoint: {fileID: 4167796201928394750}
+  bulletPrefab: {fileID: 8607296050508564201, guid: 53b9d6ea687bbc14483108cb4531c7a5,
+    type: 3}
+  cooldown: {fileID: 0}
   fireRate: 0.85
-  secondaryFireRate: 0
-  secondFireTimer: 0
+  charging: 0
 --- !u!114 &7535291356523666633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,7 +215,6 @@ MonoBehaviour:
   _light: {fileID: 0}
   _fire: {fileID: 0}
   _electr: {fileID: 0}
-  rb: {fileID: 0}
 --- !u!58 &4167796200642746275
 CircleCollider2D:
   m_ObjectHideFlags: 0

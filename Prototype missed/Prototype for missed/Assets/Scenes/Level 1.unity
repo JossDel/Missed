@@ -5480,6 +5480,11 @@ PrefabInstance:
       propertyPath: rb
       value: 
       objectReference: {fileID: 1423661557}
+    - target: {fileID: 1907534830639602492, guid: 19cc8658d7508be4b8fb573883e4f133,
+        type: 3}
+      propertyPath: cooldown
+      value: 
+      objectReference: {fileID: 1708015214}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19cc8658d7508be4b8fb573883e4f133, type: 3}
 --- !u!1 &1423661556 stripped
