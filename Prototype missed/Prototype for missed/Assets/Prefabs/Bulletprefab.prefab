@@ -116,8 +116,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c93d3bd9be817341a152cc7eb5d1293, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  poof: {fileID: 3237120032593171288, guid: 7380b3f0335eed242ad64c4e049b5907, type: 3}
   damage: 10
+  maxFireDamage: 0
   speed: 35
 --- !u!114 &6782408493712096810
 MonoBehaviour:

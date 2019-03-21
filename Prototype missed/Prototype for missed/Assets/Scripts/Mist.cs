@@ -37,7 +37,7 @@ public class Mist : MonoBehaviour {
             lightUnderPlayer.SetActive(true);
         }
 
-        if (collision.CompareTag("Enemy"))
+        if (collision.CompareTag("Enemy") || collision.CompareTag("EnemyShooter"))
         {
 
             distance = Vector2.Distance(collision.transform.position, GameObject.Find("Player").transform.position);
