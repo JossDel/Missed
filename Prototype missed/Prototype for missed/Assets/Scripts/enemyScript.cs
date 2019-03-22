@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[RequireComponent(typeof(EnemyToProjectile))]
 public class enemyScript : MonoBehaviour {
 
     public int Health = 8;
@@ -21,9 +22,7 @@ public class enemyScript : MonoBehaviour {
             GameObject.Find("GameManager").GetComponent<GameManager>().HardSaveReset();
             SceneManager.LoadScene(0);
             return;
-
         }
-        GameObject.Find("EnemyDetector").GetComponent<Detection>().OnEnemyDestroyed();
 
         if (!gameObject.name.Contains("shooter"))
             gameObject.GetComponent<Enemymovement>().enabled = false;
@@ -32,6 +31,5 @@ public class enemyScript : MonoBehaviour {
         gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
         
         StartCoroutine(gameObject.GetComponent<EnemyToProjectile>().Transition(gameObject));
-        //Destroy(gameObject);
     }
 }

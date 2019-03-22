@@ -10,11 +10,8 @@ public class Mist : MonoBehaviour {
     [SerializeField] float mistAttackRate = 1f;
     private float timer;
 
-    //public GameObject lightUnderPlayer;
-
     float distance;
 
-    // Use this for initialization
     void Start() {
 
         rb = GetComponent<Rigidbody2D>();
@@ -33,8 +30,6 @@ public class Mist : MonoBehaviour {
                 timer = mistAttackRate;
             }
             timer -= Time.deltaTime;
-
-            //lightUnderPlayer.SetActive(true);
         }
 
         if (collision.CompareTag("Enemy") || collision.CompareTag("EnemyShooter"))
@@ -71,10 +66,9 @@ public class Mist : MonoBehaviour {
         if (collision.CompareTag("Player"))
         {
             timer = 0;
-            //lightUnderPlayer.SetActive(false);
         }
 
-        if (collision.CompareTag("Enemy"))
+        if (collision.CompareTag("Enemy") || collision.CompareTag("EnemyShooter"))
         {
             collision.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
 

@@ -5,25 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class NextScene : MonoBehaviour
 {
-
-    public bool open;
-    private void Start()
-    {
-        open = false;
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
-        {
-            if (open)
-            {
-                NextRoom();
-            }
-
-
-        }
+            NextRoom();
     }
+
     public void NextRoom()
     {
         if (SceneManager.GetActiveScene().name == "Checkpoint " + (GameObject.Find("Player").GetComponent<PlayerStats>().progress + 1))
@@ -33,5 +20,4 @@ public class NextScene : MonoBehaviour
         GameObject.Find("GameManager").GetComponent<GameManager>().Save();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-
 }
