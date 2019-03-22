@@ -60,12 +60,13 @@ public class bullet : MonoBehaviour
             enemyScript enemy = collision.GetComponent<enemyScript>();
             if (enemy != null)
             {
-                Boom();
+                if (!gameObject.name.Contains("ELECTRIC"))
+                    Boom();
                 enemy.TakeDamage(damage);
             }
             
             if(!gameObject.name.Contains("ELECTRIC"))
-            Destroy(gameObject);
+                Destroy(gameObject);
         }
         if (collision.CompareTag("Walls"))
         {
