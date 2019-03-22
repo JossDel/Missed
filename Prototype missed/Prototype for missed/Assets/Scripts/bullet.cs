@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class bullet : MonoBehaviour
 {
+    public GameObject poof;
+
     public int damage;
     public int maxFireDamage;
     public float speed;
@@ -58,6 +60,7 @@ public class bullet : MonoBehaviour
             enemyScript enemy = collision.GetComponent<enemyScript>();
             if (enemy != null)
             {
+                Boom();
                 enemy.TakeDamage(damage);
             }
             
@@ -66,8 +69,14 @@ public class bullet : MonoBehaviour
         }
         if (collision.CompareTag("Walls"))
         {
-            if (!gameObject.name.Contains("ELECTRIC"))
+            if (!gameObject.name.Contains("ELECTRIC")){
+                Boom();
                 Destroy(gameObject);
+            }
         }
+    }
+    void Boom()
+    {
+        Instantiate(poof, transform.position, transform.rotation);
     }
 }

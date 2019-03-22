@@ -1782,8 +1782,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3657432654096866774, guid: 9af9dcdb85ca1864991dcc9c7b8d2cb1,
         type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ee6819b225cd13749abcfa5e7a6fda21, type: 3}
+    - target: {fileID: 3737627778756714816, guid: 9af9dcdb85ca1864991dcc9c7b8d2cb1,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8977801700059044564, guid: 9af9dcdb85ca1864991dcc9c7b8d2cb1,
         type: 3}

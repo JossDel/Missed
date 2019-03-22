@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class enemybullet : MonoBehaviour {
 
+    public Animator anim;
+    public GameObject poof;
+    public GameObject fireOnGround;
+
     public float speed = 5f;
     public int damage = 5;
 
@@ -35,6 +39,7 @@ public class enemybullet : MonoBehaviour {
             if (player != null)
             {
                 player.takeDamage(damage);
+                Destroy(gameObject);
             }
                 DestroyProjectile();
         }
@@ -47,6 +52,8 @@ public class enemybullet : MonoBehaviour {
 
     void DestroyProjectile()
     {
+        Instantiate(poof, transform.position, transform.rotation);
+        Instantiate(fireOnGround, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }

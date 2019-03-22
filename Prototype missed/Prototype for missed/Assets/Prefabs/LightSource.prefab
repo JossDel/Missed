@@ -111,3 +111,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBack: 10
   corruptionDown: 10
+  poof: {fileID: 3377100239401829415, guid: 7f95cfa7e9403f74090b77c35498723a, type: 3}
