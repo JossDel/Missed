@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 34465871}
   - component: {fileID: 34465870}
   - component: {fileID: 34465869}
-  - component: {fileID: 782332630279395434}
+  - component: {fileID: 8633931692669405684}
   - component: {fileID: 3778088705239397227}
+  - component: {fileID: 1548425801891471728}
   m_Layer: 0
   m_Name: Enemy(draugr)
   m_TagString: Enemy
@@ -136,8 +137,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 40
---- !u!58 &782332630279395434
-CircleCollider2D:
+--- !u!70 &8633931692669405684
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -150,8 +151,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 3.5
+  m_Size: {x: 4.9, y: 9.9}
+  m_Direction: 0
 --- !u!95 &3778088705239397227
 Animator:
   serializedVersion: 3
@@ -171,6 +172,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1548425801891471728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34465868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1280bf8ee20371428f7b50b5fbac392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1445679470
 GameObject:
   m_ObjectHideFlags: 0

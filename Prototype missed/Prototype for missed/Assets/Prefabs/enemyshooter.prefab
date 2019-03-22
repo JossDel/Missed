@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1222905895}
   - component: {fileID: 1222905894}
   - component: {fileID: 4256831119437215101}
+  - component: {fileID: 4682308052856597151}
   m_Layer: 0
   m_Name: enemyshooter
   m_TagString: EnemyShooter
@@ -155,6 +156,18 @@ CapsuleCollider2D:
   m_Offset: {x: -0.25003052, y: -0.0013764927}
   m_Size: {x: 0.69722205, y: 1.1285481}
   m_Direction: 0
+--- !u!114 &4682308052856597151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222905892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1280bf8ee20371428f7b50b5fbac392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1851098676
 GameObject:
   m_ObjectHideFlags: 0

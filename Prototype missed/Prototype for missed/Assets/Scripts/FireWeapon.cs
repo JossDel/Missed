@@ -9,6 +9,7 @@ public class FireWeapon : MonoBehaviour
     public GameObject bulletPrefab;
 
     public Slider cooldown;
+    public int moveSpeedSlow = 5;
 
     private float timeBtwShots;
     public float fireRate;
@@ -32,6 +33,7 @@ public class FireWeapon : MonoBehaviour
             {
                 charging = true;
                 Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+                GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().movementSpeed -= moveSpeedSlow;
             }
             if (Input.GetMouseButton(0) && charging)
             {
@@ -50,6 +52,7 @@ public class FireWeapon : MonoBehaviour
     }
     void Shoot()
     {
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().movementSpeed += moveSpeedSlow;
         charging = false;
         chargingTime = chargingLimit;
         timeBtwShots = fireRate;

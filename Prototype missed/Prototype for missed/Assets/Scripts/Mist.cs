@@ -10,7 +10,7 @@ public class Mist : MonoBehaviour {
     [SerializeField] float mistAttackRate = 1f;
     private float timer;
 
-    public GameObject lightUnderPlayer;
+    //public GameObject lightUnderPlayer;
 
     float distance;
 
@@ -34,7 +34,7 @@ public class Mist : MonoBehaviour {
             }
             timer -= Time.deltaTime;
 
-            lightUnderPlayer.SetActive(true);
+            //lightUnderPlayer.SetActive(true);
         }
 
         if (collision.CompareTag("Enemy"))
@@ -71,7 +71,7 @@ public class Mist : MonoBehaviour {
         if (collision.CompareTag("Player"))
         {
             timer = 0;
-            lightUnderPlayer.SetActive(false);
+            //lightUnderPlayer.SetActive(false);
         }
 
         if (collision.CompareTag("Enemy"))

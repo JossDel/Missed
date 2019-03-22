@@ -24,6 +24,14 @@ public class enemyScript : MonoBehaviour {
 
         }
         GameObject.Find("EnemyDetector").GetComponent<Detection>().OnEnemyDestroyed();
-        Destroy(gameObject);                        
+
+        if (!gameObject.name.Contains("shooter"))
+            gameObject.GetComponent<Enemymovement>().enabled = false;
+        else
+            gameObject.GetComponent<Enemyshhoterboi>().enabled = false;
+        gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
+        
+        StartCoroutine(gameObject.GetComponent<EnemyToProjectile>().Transition(gameObject));
+        //Destroy(gameObject);
     }
 }
