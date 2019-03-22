@@ -14,8 +14,8 @@ public class Detection : MonoBehaviour
     {
         if (numberOfEnemies <= 0)
         {
-            //remove mist
-            mist.GetComponent<Mist>().amount = 0f;
+        //    //remove mist
+        //    mist.GetComponent<Mist>().amount = 0f;
 
             mist.GetComponent<Mist>().speed = 0f;
 

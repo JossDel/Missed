@@ -5,8 +5,8 @@ using UnityEngine;
 public class LightSource : MonoBehaviour
 {
 
-    [SerializeField] int healthBack = 10;
-    [SerializeField] float corruptionDown = 10f;
+    [SerializeField]
+    int healthBack = 10;
     public GameObject poof;
     
     
@@ -15,7 +15,6 @@ public class LightSource : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             other.GetComponent<PlayerStats>().health += healthBack;
-            other.GetComponent<PlayerStats>().corruption -= corruptionDown;
             Instantiate(poof, transform.position, transform.rotation);
             Destroy(gameObject);
         }

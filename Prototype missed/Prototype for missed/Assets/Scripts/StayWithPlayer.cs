@@ -13,7 +13,6 @@ public class StayWithPlayer : MonoBehaviour
     {
         pos = player.transform.position;
         transform.position = pos + yOffset;
-
     }
 
     // Update is called once per frame

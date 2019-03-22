@@ -7,7 +7,6 @@ public class PlayerStats : MonoBehaviour
 {
     public int health = 100;
     public int maxHealth = 100;
-    public float corruption = 0;
     public float movementSpeed = 2.5f;
     public int activeWeapon = 1;
     public int progress = 0;
@@ -16,7 +15,6 @@ public class PlayerStats : MonoBehaviour
     GameManager gameManagerScript;
 
     public Slider healthbar;
-    public Slider corruptionbar;
 
     float _weaponChangeBuffer;
     [SerializeField]
@@ -37,7 +35,6 @@ public class PlayerStats : MonoBehaviour
             return;
         ChangeWeapon(activeWeapon);
         healthbar.value = CalculateHealth();
-        corruptionbar.value = CalculateCorruption();
     }
     
 
@@ -47,38 +44,12 @@ public class PlayerStats : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "TitleScreen" || SceneManager.GetActiveScene().name == "End")
             return;
 
-        if (corruption >= 100)
-        {
-            maxHealth = 0;
-        }
-        else if (corruption >= 80)
-        {
-            maxHealth = 20;
-        }
-        else if (corruption >= 60)
-        {
-            maxHealth = 40;
-        }
-        else if (corruption >= 40)
-        {
-            maxHealth = 60;
-        }
-        else if (corruption >= 20)
-        {
-            maxHealth = 80;
-        }
-        else if (corruption >= 0)
-        {
-            maxHealth = 100;
-        }
-
         if (health > maxHealth)
         {
             health = maxHealth;
         }
 
         healthbar.value = CalculateHealth();
-        corruptionbar.value = CalculateCorruption();
 
         if (Input.GetKeyDown("1") && activeWeapon != 1)
         {
@@ -102,7 +73,6 @@ public class PlayerStats : MonoBehaviour
         {
             Die();
         }
-        corruption = Mathf.Clamp(corruption, 0, 100);
     }
 
     public void takeDamage(int damage)
@@ -110,28 +80,17 @@ public class PlayerStats : MonoBehaviour
         health -= damage;
        
         if(health <= 0)
-        {
-            health = 100;
-            corruption = 0;
             Die();
-        }
     }
     void Die()
     {
         health = 100;
-        maxHealth = 100;
-        corruption = 0;
         SceneManager.LoadScene("End");
     }
 
     float CalculateHealth()
     {
         return (float)health / 100f;
-    }
-
-    float CalculateCorruption()
-    {
-        return corruption / 100f;
     }
 
     void ChangeWeapon(int weapon)
