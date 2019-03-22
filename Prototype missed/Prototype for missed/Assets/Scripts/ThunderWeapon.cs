@@ -20,18 +20,20 @@ public class ThunderWeapon : MonoBehaviour
     private float secondaryCooldown;
     public float fireCooldown = 2f;
 
-    private void Start()
-    {
-        secondaryCooldown = fireCooldown;
-        cooldown.value = CooldownCalculate();
-    }
+    bool shooting = false;
+
+    int moveSpeedBuff = 5;
 
     void Update()
     {
         if (timeBetCasts <= 0)
         {
-
-            if (Input.GetButton("Fire1"))
+            if (Input.GetMouseButton(0) && !shooting) // 0 is left click 1 right click and 2 middle click
+            {
+                shooting = true;
+                gameObject.GetComponent<Movement>().movementSpeed += moveSpeedBuff;
+            }
+            if (Input.GetMouseButton(0) && shooting)
             {
                 Shoot();
             }
@@ -39,44 +41,37 @@ public class ThunderWeapon : MonoBehaviour
         else
         {
             timeBetCasts -= Time.deltaTime;
+            if (timeBetCasts <= fireRate - .3f)
+                gameObject.GetComponent<Movement>().canMove = true;
+        }
+        if (Input.GetMouseButtonUp(0) && shooting)
+        {
+            gameObject.GetComponent<Movement>().movementSpeed -= moveSpeedBuff;
+            shooting = false;
         }
 
-        if (/*bulletsfired != bulletAmmount*/true)          // If you have more secondary bullets to shoot
+        if (timeBetCasts2 <= 0)
         {
-            if (timeBetCasts2 <= 0)
+            if (Input.GetMouseButton(1) && !shooting) // 0 is left click 1 right click and 2 middle click
             {
-                if (/*bulletsfired*/5 == 0)
-                {
-                    if (Input.GetButton("Fire2"))
-                    {
-                        Instantiate(lightFieldPrefab, firePoint.position, firePoint.rotation);
-                        //bulletsfired++;
-                        timeBetCasts2 = secondaryFireRate;
-                    }
-                }
-                else
-                {
-                    Instantiate(lightFieldPrefab, firePoint.position, firePoint.rotation);
-                    //bulletsfired++;
-                    timeBetCasts2 = secondaryFireRate;
-                }
+                shooting = true;
+                gameObject.GetComponent<Movement>().movementSpeed += moveSpeedBuff;
             }
-            else
+            if (Input.GetMouseButton(1) && shooting)
             {
-                timeBetCasts2 -= Time.deltaTime;
+                Shoot2();
             }
         }
         else
         {
-            if (secondaryCooldown <= 0)
-            {
-                secondaryCooldown = fireCooldown;
-                //bulletsfired = 0;
-            }
-            else
-            {
-                secondaryCooldown -= Time.deltaTime;
-            }
+            timeBetCasts2 -= Time.deltaTime;
+            if (timeBetCasts2 <= secondaryFireRate - .3f)
+                gameObject.GetComponent<Movement>().canMove = true;
+        }
+        if (Input.GetMouseButtonUp(1) && shooting)
+        {
+            gameObject.GetComponent<Movement>().movementSpeed -= moveSpeedBuff;
+            shooting = false;
         }
         cooldown.value = CooldownCalculate();
     }
@@ -84,10 +79,18 @@ public class ThunderWeapon : MonoBehaviour
     {
         Instantiate(lightningPrefab, firePoint.position, firePoint.rotation);
         timeBetCasts = fireRate;
+        gameObject.GetComponent<Movement>().canMove = false;
+    }
+
+    void Shoot2()
+    {
+        Instantiate(lightFieldPrefab, firePoint.position, Quaternion.identity);
+        timeBetCasts2 = secondaryFireRate;
+        gameObject.GetComponent<Movement>().canMove = false;
     }
 
     float CooldownCalculate()
     {
-        return 0/*(float)bulletsfired / (float)bulletAmmount*/;
+        return 1;
     }
 }

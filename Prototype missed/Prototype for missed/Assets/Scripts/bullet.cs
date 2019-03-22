@@ -16,23 +16,35 @@ public class bullet : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        if(weapom.FindObjectOfType<weapom>().isActiveAndEnabled)
+        if (weapom.FindObjectOfType<FireWeapon>().isActiveAndEnabled)
+            transform.parent = GameObject.Find("pointoffire").transform;
+        if (weapom.FindObjectOfType<weapom>().isActiveAndEnabled)
+        {
             rb.velocity = transform.up * speed;
+            transform.parent = GameObject.FindGameObjectWithTag("Player").transform;
+        }
     }
 
     void Update()
     {
         if (FireWeapon.FindObjectOfType<FireWeapon>().isActiveAndEnabled && !FireWeapon.FindObjectOfType<FireWeapon>().charging)
         {
+            if (transform.parent != GameObject.FindGameObjectWithTag("Player").transform)
+            {
+                transform.parent = GameObject.FindGameObjectWithTag("Player").transform;
+                damage = tempDamage;
+                transform.GetComponent<Deathbytime>().enabled = true;
+            }
             rb.velocity = transform.up * speed;
-            damage = tempDamage;
-            transform.GetComponent<Deathbytime>().enabled = true;
         }
         if (FireWeapon.FindObjectOfType<FireWeapon>().isActiveAndEnabled && FireWeapon.FindObjectOfType<FireWeapon>().charging)
         {
-            transform.localScale = FireWeapon.FindObjectOfType<FireWeapon>().BulScale();
-            tempDamage = CalculateDamage();
-            Debug.Log(tempDamage);
+            if (transform.parent != GameObject.FindGameObjectWithTag("Player").transform)
+            {
+                transform.localScale = FireWeapon.FindObjectOfType<FireWeapon>().BulScale();
+                tempDamage = CalculateDamage();
+                transform.position = GameObject.Find("pointoffire").transform.position;
+            }
         }
     }
 
@@ -51,12 +63,16 @@ public class bullet : MonoBehaviour
                 Boom();
                 enemy.TakeDamage(damage);
             }
+            
+            if(!gameObject.name.Contains("ELECTRIC"))
             Destroy(gameObject);
         }
         if (collision.CompareTag("Walls"))
         {
-            Boom();
-            Destroy(gameObject);
+            if (!gameObject.name.Contains("ELECTRIC")){
+                Boom();
+                Destroy(gameObject);
+            }
         }
     }
     void Boom()

@@ -5,12 +5,14 @@ public class Movement : PlayerStats
     Rigidbody2D rb;
     private Vector2 moveVeocity;
 
+    public bool canMove = true;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
     void Update()
-    {   
+    {
             Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
             moveVeocity = moveInput.normalized * movementSpeed;
     }
@@ -18,7 +20,8 @@ public class Movement : PlayerStats
 
 void FixedUpdate()
     {
-        rb.MovePosition(rb.position + moveVeocity * Time.fixedDeltaTime);
+        if (canMove)
+            rb.MovePosition(rb.position + moveVeocity * Time.fixedDeltaTime);
 
         //Camera and rotating stuff
         Vector3 mousepos = Input.mousePosition;
