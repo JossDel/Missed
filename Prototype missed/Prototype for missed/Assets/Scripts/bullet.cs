@@ -11,22 +11,30 @@ public class bullet : MonoBehaviour
     public float speed;
     Rigidbody2D rb;
 
+    float dps;
+    float tDps = 0;
+
     int tempDamage;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        if (weapom.FindObjectOfType<FireWeapon>().isActiveAndEnabled)
+        if (FireWeapon.FindObjectOfType<FireWeapon>().isActiveAndEnabled)
             transform.parent = GameObject.Find("pointoffire").transform;
         if (weapom.FindObjectOfType<weapom>().isActiveAndEnabled)
         {
             rb.velocity = transform.up * speed;
             transform.parent = GameObject.FindGameObjectWithTag("Player").transform;
         }
+        if (gameObject.name.Contains("ELECTRIC"))
+            dps = GameObject.FindGameObjectWithTag("Player").GetComponent<ThunderWeapon>().dps;
     }
 
     void Update()
     {
+        if (tDps > 0f && gameObject.name.Contains("ELECTRIC"))
+            tDps -= Time.deltaTime;
+
         if (FireWeapon.FindObjectOfType<FireWeapon>().isActiveAndEnabled && !FireWeapon.FindObjectOfType<FireWeapon>().charging)
         {
             if (transform.parent != GameObject.FindGameObjectWithTag("Player").transform)
@@ -55,29 +63,59 @@ public class bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy") || collision.CompareTag("EnemyShooter"))
+        if (!gameObject.name.Contains("ELECTRIC"))
         {
-            enemyScript enemy = collision.GetComponent<enemyScript>();
-            if (enemy != null)
+            if (collision.CompareTag("Enemy") || collision.CompareTag("EnemyShooter"))
             {
-                if (!gameObject.name.Contains("ELECTRIC"))
+                enemyScript enemy = collision.GetComponent<enemyScript>();
+                if (enemy != null)
+                {
                     Boom();
-                enemy.TakeDamage(damage);
-            }
-            
-            if(!gameObject.name.Contains("ELECTRIC"))
+
+                    enemy.TakeDamage(damage);
+                }
                 Destroy(gameObject);
-        }
-        if (collision.CompareTag("Walls"))
-        {
-            if (!gameObject.name.Contains("ELECTRIC")){
+            }
+            if (collision.CompareTag("Walls"))
+            {
                 Boom();
                 Destroy(gameObject);
+            }
+        }
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (gameObject.name.Contains("ELECTRIC") && Dps())
+        {
+            if (collision.CompareTag("Enemy") || collision.CompareTag("EnemyShooter"))
+            {
+                enemyScript enemy = collision.GetComponent<enemyScript>();
+                if (enemy != null)
+                {
+                    Boom(enemy.transform);
+                    Debug.Log("damage boom man Electric");
+                    enemy.TakeDamage(damage);
+                    tDps = dps;
+                    Debug.Log(dps);
+                }
             }
         }
     }
     void Boom()
     {
         Instantiate(poof, transform.position, transform.rotation);
+    }
+    
+    void Boom(Transform pos)
+    {
+        Instantiate(poof, pos.position, transform.rotation);
+    }
+
+    bool Dps()
+    {
+        if (tDps <= 0f)
+            return true;
+        else
+            return false;
     }
 }

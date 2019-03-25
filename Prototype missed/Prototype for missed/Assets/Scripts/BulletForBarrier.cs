@@ -14,11 +14,6 @@ public class BulletForBarrier : MonoBehaviour
         transform.GetComponent<Rigidbody2D>().velocity = transform.up * speed;
     }
 
-    void Update()
-    {
-
-    }
-
     public void SetDamage(float projectileDamage)
     {
         damage = projectileDamage;
@@ -34,7 +29,6 @@ public class BulletForBarrier : MonoBehaviour
         if (barrier.tag.Equals("Barrier"))
         {
             barrier.GetComponent<DoorBarrierScript>().TakeDamage(damage);
-            Debug.Log(damage);
             Destroy(gameObject);
         }
     }
