@@ -122,12 +122,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   maxHealth: 100
-  corruption: 0
   movementSpeed: 15.97
   activeWeapon: 1
   progress: 0
   healthbar: {fileID: 0}
-  corruptionbar: {fileID: 0}
   _weaponChangeBufferTime: 3
   _light: {fileID: 0}
   _fire: {fileID: 0}
@@ -190,7 +188,9 @@ MonoBehaviour:
   lightFieldPrefab: {fileID: 0}
   cooldown: {fileID: 0}
   fireRate: 1
-  secondaryFireRate: 0
+  secondaryFireRate: 1
+  secondaryTime: 1.4
+  dps: 0.2
   fireCooldown: 2
 --- !u!114 &4167796200642746274
 MonoBehaviour:
@@ -206,12 +206,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   maxHealth: 100
-  corruption: 0
   movementSpeed: 18
   activeWeapon: 1
   progress: 0
   healthbar: {fileID: 0}
-  corruptionbar: {fileID: 0}
   _weaponChangeBufferTime: 3
   _light: {fileID: 0}
   _fire: {fileID: 0}

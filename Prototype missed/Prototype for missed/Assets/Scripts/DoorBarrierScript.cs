@@ -21,6 +21,13 @@ public class DoorBarrierScript : MonoBehaviour
         //Make sound
     }
 
+    public bool DoesItLive(float damage)
+    {
+        if (health - damage <= 0)
+            return false;
+        return true;
+    }
+
     void DestroyBarrier(bool visible) // make this a Coroutine
     {
         if (visible)

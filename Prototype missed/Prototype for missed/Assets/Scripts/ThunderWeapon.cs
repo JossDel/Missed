@@ -16,6 +16,8 @@ public class ThunderWeapon : MonoBehaviour
 
     private float timeBetCasts2;
     public float secondaryFireRate;
+    public float secondaryTime = 1.4f;
+    public float dps = 0.2f;
 
     private float secondaryCooldown;
     public float fireCooldown = 2f;
@@ -56,17 +58,13 @@ public class ThunderWeapon : MonoBehaviour
             {
                 shooting = true;
                 gameObject.GetComponent<Movement>().movementSpeed += moveSpeedBuff;
-            }
-            if (Input.GetMouseButton(1) && shooting)
-            {
+
                 Shoot2();
             }
         }
         else
         {
             timeBetCasts2 -= Time.deltaTime;
-            if (timeBetCasts2 <= secondaryFireRate - .3f)
-                gameObject.GetComponent<Movement>().canMove = true;
         }
         if (Input.GetMouseButtonUp(1) && shooting)
         {
@@ -84,13 +82,15 @@ public class ThunderWeapon : MonoBehaviour
 
     void Shoot2()
     {
-        Instantiate(lightFieldPrefab, firePoint.position, Quaternion.identity);
+        GameObject field = Instantiate(lightFieldPrefab, firePoint.position, Quaternion.identity);
+        field.GetComponent<Deathbytime>().lifetime = secondaryTime;
         timeBetCasts2 = secondaryFireRate;
-        gameObject.GetComponent<Movement>().canMove = false;
     }
 
     float CooldownCalculate()
     {
-        return 1;
+        if (timeBetCasts2 == secondaryFireRate)
+            return 0;
+        return (float)timeBetCasts2 / (float)secondaryFireRate;
     }
 }

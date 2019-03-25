@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class EnemyToProjectile : MonoBehaviour
 {
-    GameObject projectile;
-    void Awake()
-    {
-        projectile = (GameObject)Resources.Load("prefabs/LightSource", typeof(GameObject));
-    }
+    public GameObject projectileStill;
+    public GameObject projectile;
+
+    [Header("Projectile Damage to the Barrier")]
+    [SerializeField]
+    float SkeletonDamage = 1;
+    [SerializeField]
+    float MageDamage = 4;
+    [SerializeField]
+    float DraugrDamage = 6;
+
+    [HideInInspector]
+    public float DamageToBarrier;
 
     public IEnumerator Transition(GameObject enemy)
     {
@@ -16,17 +24,22 @@ public class EnemyToProjectile : MonoBehaviour
         float r, g, b;
         float perc = 1f;
 
+        GameObject stillProj = Instantiate(projectileStill, enemy.transform.position, new Quaternion());
+        stillProj.transform.localScale = new Vector3(0.1f, 0.1f, stillProj.transform.localScale.z);
+
         while (perc != 0.00f)
         {
             yield return new WaitForSecondsRealtime(.01f);
 
-            perc -= .01f;
+            perc -= .03f;
             perc = Mathf.Clamp01(perc);
 
-
+            stillProj.transform.localScale = new Vector3(Mathf.Lerp(1f, 0.1f, perc), Mathf.Lerp(1f, 0.1f, perc), stillProj.transform.localScale.z);
+            stillProj.gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, Mathf.Lerp(1f, 0.1f, perc));
 
             if (enemy.gameObject.name.Contains("draugr"))
             {
+                DamageToBarrier = DraugrDamage;
 
                 scale = Mathf.Lerp(0.5f, 1.3f, perc);
 
@@ -45,6 +58,7 @@ public class EnemyToProjectile : MonoBehaviour
             }
             else if (enemy.gameObject.name.Contains("skeleton"))
             {
+                DamageToBarrier = SkeletonDamage;
 
                 scale = Mathf.Lerp(0.7f, 1f, perc);
 
@@ -64,17 +78,11 @@ public class EnemyToProjectile : MonoBehaviour
             }
             else if (enemy.gameObject.name.Contains("enemyshooter"))
             {
+                DamageToBarrier = MageDamage;
 
-                scale = Mathf.Lerp(3f, 7f, perc);
+                scale = Mathf.Lerp(0.4f, 1f, perc);
 
                 enemy.transform.localScale = new Vector3(scale, scale, enemy.transform.localScale.z);
-
-                r = Mathf.Lerp(70f, 150f, perc);
-                g = Mathf.Lerp(0f, 81f, perc);
-                b = Mathf.Lerp(100f, 81f, perc);
-
-                enemy.gameObject.GetComponent<SpriteRenderer>().color = new Color(r / 255, g / 255, b / 255, enemy.gameObject.GetComponent<SpriteRenderer>().color.a);
-
 
                 if (perc == 0f)
                 {
@@ -83,15 +91,33 @@ public class EnemyToProjectile : MonoBehaviour
             }
             else
                 Debug.LogError("WOW... EEEEY THERE BUDDY, calm down... Something went wrong in your coroutine");
-
-
-            // Instantiate projectile at the
-            //Instantiate(projectile, enemy.transform.position)
         }
 
-        if(GameObject.FindGameObjectWithTag("Barrier"))
-            GameObject.FindGameObjectWithTag("Barrier").GetComponent<DoorBarrierScript>().TakeDamage(1);
+        if (GameObject.FindGameObjectWithTag("Barrier"))
+        {
+            if (GameObject.FindGameObjectWithTag("BulletForBarrier"))
+            {
+                GameObject[] buls = GameObject.FindGameObjectsWithTag("BulletForBarrier");
+                float totalDamage = 0;
+                for(int i = 0; i < buls.Length; i++)
+                {
+                    totalDamage += buls[i].GetComponent<BulletForBarrier>().GetDamage();
+                }
+                if (GameObject.FindGameObjectWithTag("Barrier").GetComponent<DoorBarrierScript>().DoesItLive(totalDamage))
+                {
+                    GameObject bul = Instantiate(projectile, enemy.transform.position, new Quaternion());
+                    bul.GetComponent<BulletForBarrier>().SetDamage(DamageToBarrier);
+                }
+                else Debug.Log("The barrier would die so it doesn't spawn a projectile. Make it animate with poof");
+            }
+            else
+            {
+                GameObject bul = Instantiate(projectile, enemy.transform.position, new Quaternion());
+                bul.GetComponent<BulletForBarrier>().SetDamage(DamageToBarrier);
+            }
+        }
 
+        Destroy(stillProj);
         Destroy(enemy);
     }
 }
