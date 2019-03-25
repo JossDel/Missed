@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossAttack : MonoBehaviour
+public class ShootAEnemy : MonoBehaviour
 {
     public GameObject projetile;
-    public Transform player;
+    //public Transform player;
     public Transform firePoint;
 
     public float minRange;
@@ -20,8 +20,8 @@ public class BossAttack : MonoBehaviour
     {
         Hp = GetComponent<enemyScript>().Health;
 
-        minRange = 1.6f;
-        maxRange = 2f;
+        minRange = 6f;
+        maxRange = 8f;
         timeBtwShots = startTimeBtwShots;
     }
 
@@ -43,8 +43,8 @@ public class BossAttack : MonoBehaviour
 
         if (Hp <= 200)
         {
-            minRange = 0.5f;
-            maxRange = 1f;
+            minRange = 3f;
+            maxRange = 4.5f;
         }
     }
 }

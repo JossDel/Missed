@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Checkpoint 2.unity
     guid: c3314978be152aa4da0be844ae279981
   - enabled: 1
-    path: Assets/Scenes/BossRoom.unity
+    path: Assets/_The final game/Scenes/Final Boss.unity
     guid: b77f05145da9f514caf53a15b35c552b
   - enabled: 1
     path: Assets/Scenes/End.unity
