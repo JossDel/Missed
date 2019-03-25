@@ -162,7 +162,7 @@ PrefabInstance:
     - target: {fileID: 1512701111794350651, guid: 63dd87fbb0e62cf498f802725ac77758,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1512701111794350651, guid: 63dd87fbb0e62cf498f802725ac77758,
         type: 3}
@@ -379,7 +379,7 @@ PrefabInstance:
     - target: {fileID: 1512701111794350651, guid: 63dd87fbb0e62cf498f802725ac77758,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1512701111794350651, guid: 63dd87fbb0e62cf498f802725ac77758,
         type: 3}
@@ -448,7 +448,7 @@ PrefabInstance:
     - target: {fileID: 1512701111794350651, guid: 63dd87fbb0e62cf498f802725ac77758,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1512701111794350651, guid: 63dd87fbb0e62cf498f802725ac77758,
         type: 3}
@@ -700,6 +700,12 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6295858595878418923, guid: 9af9dcdb85ca1864991dcc9c7b8d2cb1,
+        type: 3}
+      propertyPath: boxOfMists
+      value: 
+      objectReference: {fileID: 8164566290588311351, guid: acfc6a6d4c7d35e41a43a6d9bfa106df,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9af9dcdb85ca1864991dcc9c7b8d2cb1, type: 3}
 --- !u!114 &1020843364 stripped
@@ -878,7 +884,7 @@ PrefabInstance:
     - target: {fileID: 1512701111794350651, guid: 63dd87fbb0e62cf498f802725ac77758,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1512701111794350651, guid: 63dd87fbb0e62cf498f802725ac77758,
         type: 3}
