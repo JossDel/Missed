@@ -84,6 +84,8 @@ public class ThunderWeapon : MonoBehaviour
     {
         GameObject field = Instantiate(lightFieldPrefab, firePoint.position, Quaternion.identity);
         field.GetComponent<Deathbytime>().lifetime = secondaryTime;
+        field.transform.parent = transform;
+        field.GetComponent<StayWithPlayer>().player = gameObject;
         timeBetCasts2 = secondaryFireRate;
     }
 
