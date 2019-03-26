@@ -413,7 +413,7 @@ GameObject:
   - component: {fileID: 3737627777620387034}
   m_Layer: 0
   m_Name: Point Light
-  m_TagString: Untagged
+  m_TagString: LightUnderPlayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1123,33 +1123,59 @@ PrefabInstance:
     - target: {fileID: 4395325879722010089, guid: 9529038ab94d3a44abe93731724b5563,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 15.390449
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4395325879722010089, guid: 9529038ab94d3a44abe93731724b5563,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.118975
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4395325879722010089, guid: 9529038ab94d3a44abe93731724b5563,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 4.461
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4395325879722010090, guid: 9529038ab94d3a44abe93731724b5563,
         type: 3}
       propertyPath: m_Offset.x
-      value: -1.059319
+      value: -0.18993616
       objectReference: {fileID: 0}
     - target: {fileID: 4395325879722010090, guid: 9529038ab94d3a44abe93731724b5563,
         type: 3}
       propertyPath: m_Size.x
-      value: 3.118638
+      value: 7.0929537
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395325879722010090, guid: 9529038ab94d3a44abe93731724b5563,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 11.681818
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395325879722010090, guid: 9529038ab94d3a44abe93731724b5563,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 11.636364
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395325879722010090, guid: 9529038ab94d3a44abe93731724b5563,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.8597641
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395325879722010090, guid: 9529038ab94d3a44abe93731724b5563,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 8.801815
       objectReference: {fileID: 0}
     - target: {fileID: 4395325879722010091, guid: 9529038ab94d3a44abe93731724b5563,
         type: 3}
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4395325879722010091, guid: 9529038ab94d3a44abe93731724b5563,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 25cc777ae68f57b429043ef7aa2b82d5,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9529038ab94d3a44abe93731724b5563, type: 3}
 --- !u!4 &1090413377966818045 stripped

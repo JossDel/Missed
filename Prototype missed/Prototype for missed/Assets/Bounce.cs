@@ -4,26 +4,12 @@ using UnityEngine;
 
 public class Bounce : MonoBehaviour
 {
-    public Transform Highpoint;
-    public Transform Lowpoint;
-    private bool dirUp = true;
-    public float speed = 2.0f;
+    [SerializeField] Vector3 pos1 = new Vector3(0, -4, 0);
+    [SerializeField] Vector3 pos2 = new Vector3(0, 4, 0);
+    public float speed = 1.0f;
 
     void Update()
     {
-        if (dirUp)
-            transform.Translate(Vector2.up * speed * Time.deltaTime);
-        else
-            transform.Translate(-Vector2.up * speed * Time.deltaTime);
-
-       /* if (transform.position.y >= Highpoint.position)
-        {
-            dirUp = false;
-        }
-
-        if (transform.position.x <= Lowpoint)
-        {
-            dirUp = true;
-        } */
+        transform.position = Vector3.Lerp(pos1, pos2, Mathf.PingPong(Time.time * speed, 1.0f));
     }
 }
