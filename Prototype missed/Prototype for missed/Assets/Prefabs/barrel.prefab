@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1390659587760633678}
   - component: {fileID: 1390659587760633677}
-  - component: {fileID: 6230718841765821929}
+  - component: {fileID: 1369154017349388510}
   m_Layer: 0
   m_Name: barrel
   m_TagString: Walls
@@ -80,8 +80,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &6230718841765821929
-CapsuleCollider2D:
+--- !u!58 &1369154017349388510
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -93,6 +93,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 2.4100003, y: 3.3900006}
-  m_Direction: 0
+  m_Offset: {x: 0, y: 0.57301545}
+  serializedVersion: 2
+  m_Radius: 1.1219845

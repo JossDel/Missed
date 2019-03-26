@@ -919,7 +919,7 @@ EdgeCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 165, y: 0}
+  m_Offset: {x: 650, y: 0}
   m_EdgeRadius: 0
   m_Points:
   - {x: 0, y: 0}
@@ -1060,11 +1060,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1035504008349361467}
     m_Modifications:
-    - target: {fileID: 4395325879722010088, guid: 9529038ab94d3a44abe93731724b5563,
-        type: 3}
-      propertyPath: m_Name
-      value: Exitdoor
-      objectReference: {fileID: 0}
     - target: {fileID: 4395325879722010089, guid: 9529038ab94d3a44abe93731724b5563,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1134,6 +1129,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395325879722010088, guid: 9529038ab94d3a44abe93731724b5563,
+        type: 3}
+      propertyPath: m_Name
+      value: Exitdoor
       objectReference: {fileID: 0}
     - target: {fileID: 4395325879722010090, guid: 9529038ab94d3a44abe93731724b5563,
         type: 3}
@@ -1266,16 +1266,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1035504008349361467}
     m_Modifications:
-    - target: {fileID: 238302153828551770, guid: 34ca8368291907347b7d697c27efcac9,
-        type: 3}
-      propertyPath: m_Name
-      value: LightSource
-      objectReference: {fileID: 0}
-    - target: {fileID: 238302153828551770, guid: 34ca8368291907347b7d697c27efcac9,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 238302153828551766, guid: 34ca8368291907347b7d697c27efcac9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1331,6 +1321,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 238302153828551770, guid: 34ca8368291907347b7d697c27efcac9,
+        type: 3}
+      propertyPath: m_Name
+      value: LightSource
+      objectReference: {fileID: 0}
+    - target: {fileID: 238302153828551770, guid: 34ca8368291907347b7d697c27efcac9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34ca8368291907347b7d697c27efcac9, type: 3}
 --- !u!4 &3499338841310817531 stripped
@@ -1346,16 +1346,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1035504008349361467}
     m_Modifications:
-    - target: {fileID: 80914400534018899, guid: 8f71c261f144b8742a528287f382a33e,
-        type: 3}
-      propertyPath: m_Name
-      value: Canvas (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 80914400534018899, guid: 8f71c261f144b8742a528287f382a33e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 80914400534018911, guid: 8f71c261f144b8742a528287f382a33e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1460,6 +1450,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 80914400534018899, guid: 8f71c261f144b8742a528287f382a33e,
+        type: 3}
+      propertyPath: m_Name
+      value: Canvas (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 80914400534018899, guid: 8f71c261f144b8742a528287f382a33e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 80914399724864521, guid: 8f71c261f144b8742a528287f382a33e,
         type: 3}
@@ -1884,11 +1884,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1035504008349361467}
     m_Modifications:
-    - target: {fileID: 1985478506647693175, guid: 3d24f61c5a977854ca774845722a1dbe,
-        type: 3}
-      propertyPath: m_Name
-      value: Barrier
-      objectReference: {fileID: 0}
     - target: {fileID: 1985478506647693161, guid: 3d24f61c5a977854ca774845722a1dbe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1943,6 +1938,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1985478506647693175, guid: 3d24f61c5a977854ca774845722a1dbe,
+        type: 3}
+      propertyPath: m_Name
+      value: Barrier
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d24f61c5a977854ca774845722a1dbe, type: 3}
