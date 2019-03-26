@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 1519863288109674595, guid: 4eeb685cc4aae2e45a0ac4786b1cd4c8,
         type: 3}
       propertyPath: m_Name
-      value: Poof
+      value: PoofBoss
       objectReference: {fileID: 0}
     - target: {fileID: 1519863288109674599, guid: 4eeb685cc4aae2e45a0ac4786b1cd4c8,
         type: 3}
@@ -76,6 +76,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1519863288109674592, guid: 4eeb685cc4aae2e45a0ac4786b1cd4c8,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4eeb685cc4aae2e45a0ac4786b1cd4c8, type: 3}

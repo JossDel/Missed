@@ -77,6 +77,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3327082955774451474, guid: c290a2ffc9efb5246b0bb02583a2a938,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
+      objectReference: {fileID: 0}
     - target: {fileID: 3327082955774451487, guid: c290a2ffc9efb5246b0bb02583a2a938,
         type: 3}
       propertyPath: poof

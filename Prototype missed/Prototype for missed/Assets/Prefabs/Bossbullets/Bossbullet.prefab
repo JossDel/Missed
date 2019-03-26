@@ -63,6 +63,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 212843468618466986, guid: b184e891cfe23554ebe7891e24116011,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
+      objectReference: {fileID: 0}
     - target: {fileID: 114765686375167794, guid: b184e891cfe23554ebe7891e24116011,
         type: 3}
       propertyPath: anim
