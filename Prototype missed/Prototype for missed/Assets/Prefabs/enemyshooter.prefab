@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 1222905898}
   - component: {fileID: 1222905897}
   - component: {fileID: 1222905896}
-  - component: {fileID: 1222905895}
   - component: {fileID: 1222905894}
-  - component: {fileID: 4256831119437215101}
   - component: {fileID: 5012749930659044511}
   - component: {fileID: 8782390455159459877}
+  - component: {fileID: 4599459936600501138}
+  - component: {fileID: 4311479832200103108}
   m_Layer: 0
   m_Name: enemyshooter
   m_TagString: EnemyShooter
@@ -111,27 +111,6 @@ MonoBehaviour:
   minReload: 1.8
   maxReload: 2.5
   startTimeBtwShots: 2
---- !u!50 &1222905895
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222905892}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1000000
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 7
 --- !u!114 &1222905894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,22 +124,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 30
---- !u!70 &4256831119437215101
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222905892}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -1.3844147, y: 0.1361239}
-  m_Size: {x: 5.4410095, y: 7.7097783}
-  m_Direction: 0
 --- !u!95 &5012749930659044511
 Animator:
   serializedVersion: 3
@@ -200,6 +163,43 @@ MonoBehaviour:
   MageDamage: 4
   DraugrDamage: 6
   DamageToBarrier: 0
+--- !u!70 &4599459936600501138
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222905892}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.3401506, y: -0.38267517}
+  m_Size: {x: 7.0204663, y: 7.5594606}
+  m_Direction: 0
+--- !u!50 &4311479832200103108
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222905892}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1851098676
 GameObject:
   m_ObjectHideFlags: 0
