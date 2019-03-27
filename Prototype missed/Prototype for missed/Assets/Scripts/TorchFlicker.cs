@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class TorchFlicker : MonoBehaviour
 {
+    Animator anim;
+
     [Header("Seconds before next random Range")]
 
     [SerializeField]
@@ -33,13 +35,14 @@ public class TorchFlicker : MonoBehaviour
 
     void Start()
     {
+        anim = gameObject.GetComponentInParent<Animator>();
         light = GetComponent<Light>();
         co = StartCoroutine(Flashing());
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name == "MIST")
+        if (collision.name.Contains("Mist"))
         {
             StopCoroutine(co);
             light.range = 40;
@@ -83,7 +86,10 @@ public class TorchFlicker : MonoBehaviour
             light.range += 1f * two;
             yield return new WaitForSecondsRealtime(.01f);
             if (light.range >= 75f && two == 2)
+            {
+                anim.SetBool("InMist", true);
                 Destroy(gameObject);
+            }
             if (light.range >= 55f && two != 2)
                 two = 2;
         }

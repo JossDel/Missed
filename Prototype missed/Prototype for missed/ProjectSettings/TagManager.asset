@@ -9,6 +9,8 @@ TagManager:
   - EnemyShooter
   - Barrier
   - BulletForBarrier
+  - LightUnderPlayer
+  - Notes
   layers:
   - Default
   - TransparentFX
