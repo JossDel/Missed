@@ -504,12 +504,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   maxHealth: 100
-  corruption: 0
   movementSpeed: 2.5
   activeWeapon: 1
   progress: 0
   healthbar: {fileID: 0}
-  corruptionbar: {fileID: 0}
   _weaponChangeBufferTime: 3
   _light: {fileID: 0}
   _fire: {fileID: 0}
@@ -1467,7 +1465,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 833cba7f26a73584e986f4e82d690e70, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2076c8e2bf9044a47bbd381e7e87d5a1, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

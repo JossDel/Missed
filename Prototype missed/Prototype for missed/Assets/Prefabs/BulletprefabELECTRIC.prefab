@@ -110,7 +110,7 @@ PrefabInstance:
         type: 3}
       propertyPath: poof
       value: 
-      objectReference: {fileID: 7883703179322495482, guid: 5d5e6d4a07bbd704e8561bfb5f31412d,
+      objectReference: {fileID: 7224531507332332360, guid: 4c4508cca3732cd49ab4793c2c6677a0,
         type: 3}
     - target: {fileID: 2983733681259376645, guid: 53b9d6ea687bbc14483108cb4531c7a5,
         type: 3}
