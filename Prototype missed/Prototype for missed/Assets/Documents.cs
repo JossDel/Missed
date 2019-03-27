@@ -4,39 +4,20 @@ using UnityEngine;
 
 public class Documents : MonoBehaviour
 {
-    public static bool GameIsPaused = false;
     public GameObject Note;
-
-    void Update()
+    void ShowNote()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && GameIsPaused == true)
-        {
-            Resume();
-        }
-        else
-        {
-            return;
-        }
-    }
-    public void Resume()
-    {
-        Note.SetActive(false);
-        Time.timeScale = 1f;
-        GameIsPaused = false;
-    }
-    void Pause()
-    {
-        Note.SetActive(true);
+        PauseMenu.FindObjectOfType<PauseMenu>().GameIsPaused = true;
         Time.timeScale = 0f;
-        GameIsPaused = true;
+        gameObject.SetActive(false);
+        Note.SetActive(true);
     }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            Pause();
-            gameObject.SetActive(false);
+            ShowNote();
         }
     }
 }
