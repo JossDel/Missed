@@ -89,12 +89,20 @@ public class bullet : MonoBehaviour
         {
             if (collision.CompareTag("Enemy") || collision.CompareTag("EnemyShooter"))
             {
-                enemyScript enemy = collision.GetComponent<enemyScript>();
-                if (enemy != null)
+
+                    enemyScript enemy = collision.GetComponent<enemyScript>();
+                if (!collision.name.Contains("Boss"))
                 {
-                    Boom(enemy.transform);
-                    enemy.TakeDamage(damage, false);
+
+                    if (enemy != null)
+                    {
+                        Boom(enemy.transform);
+                        enemy.TakeDamage(damage, false);
+                    }
                 }
+                else
+                    enemy.TakeDamage(damage, false);
+
             }
         }
     }

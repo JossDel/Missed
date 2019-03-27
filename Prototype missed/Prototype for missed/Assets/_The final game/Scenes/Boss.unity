@@ -3155,7 +3155,7 @@ GameObject:
   - component: {fileID: 1612746987}
   - component: {fileID: 1612746986}
   m_Layer: 0
-  m_Name: Bossarmsup (1)
+  m_Name: Boss
   m_TagString: EnemyShooter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -15210,6 +15210,12 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 2a02b7fcf98890540abfe26e025c11e8, type: 3}
+    - target: {fileID: 6295858595878418923, guid: 9af9dcdb85ca1864991dcc9c7b8d2cb1,
+        type: 3}
+      propertyPath: boxOfMists
+      value: 
+      objectReference: {fileID: 37620201069196000, guid: 86ff546743e71b948867ceb5cb17410d,
+        type: 3}
     - target: {fileID: 3657432653476735861, guid: 9af9dcdb85ca1864991dcc9c7b8d2cb1,
         type: 3}
       propertyPath: m_AnchorMin.x

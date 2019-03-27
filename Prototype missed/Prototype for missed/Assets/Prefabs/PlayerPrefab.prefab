@@ -149,8 +149,8 @@ MonoBehaviour:
   secondBullet: {fileID: 7572274192237260385, guid: f1722c73e5cf8a744a9d77917aa1c964,
     type: 3}
   cooldown: {fileID: 0}
-  bulletAmmount: 8
-  fireRate: 0.5
+  bulletAmmount: 5
+  fireRate: 0.85
   secondaryFireRate: 0.09
   fireCooldown: 5
 --- !u!114 &1907534830639602492
@@ -170,7 +170,7 @@ MonoBehaviour:
     type: 3}
   cooldown: {fileID: 0}
   moveSpeedSlow: 5
-  fireRate: 0.85
+  fireRate: 0.95
   charging: 0
 --- !u!114 &7535291356523666633
 MonoBehaviour:
@@ -188,11 +188,10 @@ MonoBehaviour:
   lightningPrefab: {fileID: 0}
   lightFieldPrefab: {fileID: 0}
   cooldown: {fileID: 0}
-  fireRate: 1
-  secondaryFireRate: 1
-  secondaryTime: 1.4
+  fireRate: 0.3
+  secondaryFireRate: 6
+  secondaryTime: 0.8
   dps: 0.2
-  fireCooldown: 2
 --- !u!114 &4167796200642746274
 MonoBehaviour:
   m_ObjectHideFlags: 0
