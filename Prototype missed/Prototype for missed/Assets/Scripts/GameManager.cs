@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
             prefChild = enemiesPrefab.transform.GetChild(Random.Range(0, enemiesPrefab.transform.childCount)).gameObject;
             Instantiate(prefChild, Vector3.zero, new Quaternion());
         }
-        if (!SceneManager.GetActiveScene().name.Contains("Checkpoint"))
+        if (!SceneManager.GetActiveScene().name.Contains("Checkpoint") && !SceneManager.GetActiveScene().name.Contains("Boss"))
         {
             GameObject mist = Instantiate(boxOfMists, boxOfMists.transform.position, boxOfMists.transform.rotation);
             mist.transform.Find("End of Map").parent = mist.transform.parent;
@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (!SceneManager.GetActiveScene().name.Contains("Checkpoint"))
+        if (!SceneManager.GetActiveScene().name.Contains("Checkpoint") && !SceneManager.GetActiveScene().name.Contains("Boss"))
         {
             mistTime += Time.deltaTime;
             if (mistTime >= boxOfMists.GetComponent<Mist>().speed + delay)

@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level 1 Mist
       objectReference: {fileID: 0}
+    - target: {fileID: 2306712854994229285, guid: 8a829a559af954f4c80a0470e041c667,
+        type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 8270180302350101765}
     - target: {fileID: 2306712854994229287, guid: 8a829a559af954f4c80a0470e041c667,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -67,11 +72,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2306712854994229285, guid: 8a829a559af954f4c80a0470e041c667,
+    - target: {fileID: 4039566110913664875, guid: 8a829a559af954f4c80a0470e041c667,
         type: 3}
-      propertyPath: rb
-      value: 
-      objectReference: {fileID: 8270180302350101765}
+      propertyPath: m_LocalPosition.x
+      value: 280
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a829a559af954f4c80a0470e041c667, type: 3}
 --- !u!50 &8270180302350101765 stripped

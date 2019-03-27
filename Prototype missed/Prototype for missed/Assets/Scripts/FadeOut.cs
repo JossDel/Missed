@@ -1,41 +1,39 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class FadeOut : MonoBehaviour
 {
-    GameObject mist;
-    GameObject lightUnderPlayer;
+    GameObject fdsfds;
 
     public float fadeOutTime = 2f;
 
     void Start()
     {
-        mist = GameObject.Find("MIST");
-        lightUnderPlayer = GameObject.Find("Point Light");
-        StartCoroutine(SpriteFadeOut(GetComponent<SpriteRenderer>()));
+        fdsfds = gameObject;
+        StartCoroutine(SpriteFadeOut(fdsfds));
     }
 
-    IEnumerator SpriteFadeOut(SpriteRenderer _sprite)
+    IEnumerator SpriteFadeOut(GameObject _sprite)
     {
-        Color tmpColor = _sprite.color;
+        Color tmpColor = _sprite.GetComponent<Graphic>().color;
 
         while (tmpColor.a > 0f)
         {
             tmpColor.a -= Time.deltaTime / fadeOutTime;
-            _sprite.color = tmpColor;
+            _sprite.GetComponent<Graphic>().color = tmpColor;
 
             if (tmpColor.a <= 0f)
                 tmpColor.a = 0.0f;
 
             yield return null;
         }
-        _sprite.color = tmpColor;
+        _sprite.GetComponent<Graphic>().color = tmpColor;
 
-        mist.SetActive(false);
-        if (lightUnderPlayer != null)
-        {
-            lightUnderPlayer.SetActive(false);
-        }
+        yield return new WaitForSecondsRealtime(1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        fdsfds.SetActive(false);
     }
 }

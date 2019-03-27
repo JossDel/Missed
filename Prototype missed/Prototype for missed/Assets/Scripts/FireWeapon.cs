@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class FireWeapon : MonoBehaviour
 {
+    public AudioSource Sound;
     public Transform firePoint;
     public GameObject bulletPrefab;
 
@@ -52,6 +53,7 @@ public class FireWeapon : MonoBehaviour
     }
     void Shoot()
     {
+        Sound.Play();
         GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().movementSpeed += moveSpeedSlow;
         charging = false;
         chargingTime = chargingLimit;
