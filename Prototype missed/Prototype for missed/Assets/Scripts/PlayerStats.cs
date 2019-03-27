@@ -109,14 +109,14 @@ public class PlayerStats : MonoBehaviour
             transform.GetComponentInParent<FireWeapon>().enabled = false;
             transform.GetComponentInParent<ThunderWeapon>().enabled = false;
 
-            if (weapon == 1)
+            if (weapon == 2)
             {
                 _light.SetActive(true);
                 lightUnderPlayer.gameObject.GetComponent<Light>().color = new Color32(0xff, 0xff, 0xff, 0xff); //FFFFF
 
                 transform.GetComponentInParent<weapom>().enabled = true;
             }
-            else if (weapon == 2)
+            else if (weapon == 1)
             {
                 _fire.SetActive(true);
                 lightUnderPlayer.gameObject.GetComponent<Light>().color = new Color(255, 255, 255);

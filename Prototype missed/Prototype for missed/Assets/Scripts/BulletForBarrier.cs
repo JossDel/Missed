@@ -6,7 +6,7 @@ public class BulletForBarrier : MonoBehaviour
 {
     [SerializeField]
     float speed = 100;
-    float damage;
+    float damage = 0;
 
     void Start()
     {

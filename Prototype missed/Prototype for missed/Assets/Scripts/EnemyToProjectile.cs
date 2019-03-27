@@ -98,13 +98,14 @@ public class EnemyToProjectile : MonoBehaviour
             if (GameObject.FindGameObjectWithTag("BulletForBarrier"))
             {
                 GameObject[] buls = GameObject.FindGameObjectsWithTag("BulletForBarrier");
+                Debug.Log("Number of projectiles " + buls.Length);
                 float totalDamage = 0;
-                for(int i = 0; i < buls.Length; i++)
-                {
-                    totalDamage += buls[i].GetComponent<BulletForBarrier>().GetDamage();
-                }
+                foreach(GameObject bulsS in buls)
+                    totalDamage += bulsS.GetComponent<BulletForBarrier>().GetDamage();
                 if (GameObject.FindGameObjectWithTag("Barrier").GetComponent<DoorBarrierScript>().DoesItLive(totalDamage))
                 {
+                    Debug.Log(GameObject.FindGameObjectWithTag("Barrier").GetComponent<DoorBarrierScript>().DoesItLive(totalDamage) + " is the total health of the barrier now ");
+                    Debug.Log("TOTAL Damage to barrier " + totalDamage);
                     GameObject bul = Instantiate(projectile, enemy.transform.position, new Quaternion());
                     bul.GetComponent<BulletForBarrier>().SetDamage(DamageToBarrier);
                 }
