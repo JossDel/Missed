@@ -96,4 +96,12 @@ public class weapom : MonoBehaviour
             return 0;
         return (float)secondaryCooldown / (float)fireCooldown;
     }
+
+    void OnDisable()
+    {
+        bulletsfired = 0;
+        timeBtwShots = 0;
+        timeBtwShots2 = 0;
+        secondaryCooldown = fireCooldown;
+    }
 }

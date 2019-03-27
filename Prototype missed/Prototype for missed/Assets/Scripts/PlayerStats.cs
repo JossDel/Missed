@@ -13,6 +13,7 @@ public class PlayerStats : MonoBehaviour
 
     GameObject gameManager;
     GameManager gameManagerScript;
+    GameObject lightUnderPlayer;
 
     public Slider healthbar;
 
@@ -26,6 +27,7 @@ public class PlayerStats : MonoBehaviour
 
     void Start()
     {
+        lightUnderPlayer = GameObject.FindGameObjectWithTag("LightUnderPlayer");
         gameManager = GameObject.Find("GameManager");
         gameManagerScript = gameManager.GetComponent<GameManager>();
         gameManagerScript.Load();
@@ -110,18 +112,22 @@ public class PlayerStats : MonoBehaviour
             if (weapon == 1)
             {
                 _light.SetActive(true);
+                lightUnderPlayer.gameObject.GetComponent<Light>().color = new Color32(0xff, 0xff, 0xff, 0xff); //FFFFF
 
                 transform.GetComponentInParent<weapom>().enabled = true;
             }
             else if (weapon == 2)
             {
                 _fire.SetActive(true);
+                lightUnderPlayer.gameObject.GetComponent<Light>().color = new Color(255, 255, 255);
+                lightUnderPlayer.gameObject.GetComponent<Light>().color = new Color32(0xff, 0x96, 0x50, 0xff); //FF9650
 
                 transform.GetComponentInParent<FireWeapon>().enabled = true;
             }
             else if (weapon == 3)
             {
                 _electr.SetActive(true);
+                lightUnderPlayer.gameObject.GetComponent<Light>().color = new Color32(0x50, 0xd7, 0xff, 0xff); //50D7FF
 
                 transform.GetComponentInParent<ThunderWeapon>().enabled = true;
             }

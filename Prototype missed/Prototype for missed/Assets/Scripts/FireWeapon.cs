@@ -86,4 +86,13 @@ public class FireWeapon : MonoBehaviour
             return 0;
         return timeBtwShots / fireRate;
     }
+
+    void OnDisable()
+    {
+        if (charging)
+        {
+            Shoot();
+            timeBtwShots = 0;
+        }
+    }
 }
