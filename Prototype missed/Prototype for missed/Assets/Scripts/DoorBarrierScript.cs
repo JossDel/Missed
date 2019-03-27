@@ -21,9 +21,9 @@ public class DoorBarrierScript : MonoBehaviour
         //Make sound
     }
 
-    public bool DoesItLive(float damage)
+    public bool DoesItLive(float damagee)
     {
-        if (health - damage <= 0)
+        if (health - damagee <= 0)
             return false;
         return true;
     }
