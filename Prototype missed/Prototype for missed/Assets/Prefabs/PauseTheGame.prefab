@@ -327,6 +327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6bc86a2e9e72184ab4c6d705436b26e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameIsPaused: 0
   pauseMenuUI: {fileID: 7470685406022654445}
 --- !u!1 &7470685406093290457
 GameObject:
@@ -854,6 +855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6bc86a2e9e72184ab4c6d705436b26e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameIsPaused: 0
   pauseMenuUI: {fileID: 7470685406589412562}
 --- !u!1 &7470685406550718085
 GameObject:
@@ -1243,7 +1245,7 @@ MonoBehaviour:
 
     Right mouse button
 
-    Scrollwheel'
+    1, 2 and 3'
 --- !u!114 &7470685407242905429
 MonoBehaviour:
   m_ObjectHideFlags: 0
