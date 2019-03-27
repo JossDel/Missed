@@ -39,7 +39,7 @@ EditorBuildSettings:
     path: Assets/_The final game/Scenes/Final Level 8.unity
     guid: 10dea9cd462833748b29d241beb2c2fb
   - enabled: 1
-    path: Assets/_The final game/Scenes/Final Level 9.unity
+    path: Assets/_The final game/Scenes/Final Level 9 - do not use.unity
     guid: 4247b0c617daeb440babc55bd6d69502
   - enabled: 1
     path: Assets/_The final game/Scenes/Checkpoint 3.unity
