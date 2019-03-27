@@ -122,8 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b416c60497bae1846a57bdb8729a9eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 150
-  maxHealth: 100
+  health: 170
+  maxHealth: 170
   movementSpeed: 15.97
   activeWeapon: 1
   progress: 0
