@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 3237120032593171288, guid: 7380b3f0335eed242ad64c4e049b5907,
         type: 3}
       propertyPath: m_Name
-      value: LightBoom
+      value: PoofForElec
       objectReference: {fileID: 0}
     - target: {fileID: 3237120032593171293, guid: 7380b3f0335eed242ad64c4e049b5907,
         type: 3}
@@ -75,7 +75,22 @@ PrefabInstance:
     - target: {fileID: 3237120032593171290, guid: 7380b3f0335eed242ad64c4e049b5907,
         type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 0.88235295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3237120032593171290, guid: 7380b3f0335eed242ad64c4e049b5907,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.8537736
+      objectReference: {fileID: 0}
+    - target: {fileID: 3237120032593171290, guid: 7380b3f0335eed242ad64c4e049b5907,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.8977245
+      objectReference: {fileID: 0}
+    - target: {fileID: 3237120032593171290, guid: 7380b3f0335eed242ad64c4e049b5907,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7380b3f0335eed242ad64c4e049b5907, type: 3}

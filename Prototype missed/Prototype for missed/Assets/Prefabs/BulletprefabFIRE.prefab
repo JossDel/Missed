@@ -156,7 +156,7 @@ PrefabInstance:
     - target: {fileID: 114999166205502496, guid: 12eeeac5913922c44a5cbc91c6447ec1,
         type: 3}
       propertyPath: maxFireDamage
-      value: 40
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 114999166205502496, guid: 12eeeac5913922c44a5cbc91c6447ec1,
         type: 3}

@@ -71,10 +71,10 @@ public class enemyScript : MonoBehaviour {
 
     void Die()
     {
-        if (gameObject.name == "Bossarmsup (1)")
+        if (gameObject.name == "Boss")
         {
             GameObject.Find("GameManager").GetComponent<GameManager>().HardSaveReset();
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene("WinScreen");
             return;
         }
 
