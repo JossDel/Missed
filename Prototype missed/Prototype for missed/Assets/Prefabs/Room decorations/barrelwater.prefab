@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5277902819101143940}
   - component: {fileID: 5277902819101143941}
-  - component: {fileID: 2266378329904639612}
+  - component: {fileID: 227866437246670659}
   m_Layer: 0
   m_Name: barrelwater
   m_TagString: Walls
@@ -80,8 +80,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &2266378329904639612
-CapsuleCollider2D:
+--- !u!58 &227866437246670659
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -93,6 +93,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 2.41, y: 3.39}
-  m_Direction: 0
+  m_Offset: {x: 0, y: 0.61990696}
+  serializedVersion: 2
+  m_Radius: 1.0750933
