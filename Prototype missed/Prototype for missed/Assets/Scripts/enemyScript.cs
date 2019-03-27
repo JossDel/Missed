@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(EnemyToProjectile))]
 public class enemyScript : MonoBehaviour {
 
+    public AudioSource SoundWhenHit;
+
     public int Health = 8;
     float lightOff;
     float debuffOff = 0;
@@ -35,6 +37,7 @@ public class enemyScript : MonoBehaviour {
     public void TakeDamage(int damage)
     {
         Health -= damage;
+        SoundWhenHit.Play();
         if (Health <= 0)
         {
             Die();
