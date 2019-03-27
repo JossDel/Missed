@@ -98,18 +98,14 @@ public class EnemyToProjectile : MonoBehaviour
             if (GameObject.FindGameObjectWithTag("BulletForBarrier"))
             {
                 GameObject[] buls = GameObject.FindGameObjectsWithTag("BulletForBarrier");
-                Debug.Log("Number of projectiles " + buls.Length);
                 float totalDamage = 0;
                 foreach(GameObject bulsS in buls)
                     totalDamage += bulsS.GetComponent<BulletForBarrier>().GetDamage();
                 if (GameObject.FindGameObjectWithTag("Barrier").GetComponent<DoorBarrierScript>().DoesItLive(totalDamage))
                 {
-                    Debug.Log(GameObject.FindGameObjectWithTag("Barrier").GetComponent<DoorBarrierScript>().DoesItLive(totalDamage) + " is the total health of the barrier now ");
-                    Debug.Log("TOTAL Damage to barrier " + totalDamage);
                     GameObject bul = Instantiate(projectile, enemy.transform.position, new Quaternion());
                     bul.GetComponent<BulletForBarrier>().SetDamage(DamageToBarrier);
                 }
-                else Debug.Log("The barrier would die so it doesn't spawn a projectile. Make it animate with poof");
             }
             else
             {

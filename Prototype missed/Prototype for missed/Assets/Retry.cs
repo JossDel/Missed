@@ -15,7 +15,7 @@ public class Retry : MonoBehaviour
                 SceneManager.LoadScene("Checkpoint " + GameObject.Find("Player").GetComponent<PlayerStats>().progress);
             }
             else
-                SceneManager.LoadScene("Final Level 1");
+                SceneManager.LoadScene("Final Tutorial");
         }
         
     }
