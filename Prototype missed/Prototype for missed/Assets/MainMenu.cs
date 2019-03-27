@@ -21,6 +21,6 @@ public class MainMenu : MonoBehaviour
     public void NewGame()
     {
         GameObject.Find("GameManager").GetComponent<GameManager>().HardSaveReset();
-        SceneManager.LoadScene("Final Level 1");
+        SceneManager.LoadScene("LogoScreen");
     }
 }
