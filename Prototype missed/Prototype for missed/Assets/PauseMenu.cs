@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public bool GameIsPaused = false;
+    public bool finalNote = false;
 
     public GameObject pauseMenuUI;
 
@@ -33,6 +34,11 @@ public class PauseMenu : MonoBehaviour
         foreach (GameObject fkme in allNotes)
         {
             fkme.SetActive(false);
+        }
+        if (finalNote)
+        {
+            DoorBarrierScript.FindObjectOfType<DoorBarrierScript>().DestroyBarrier(false);
+            finalNote = false;
         }
     }
 

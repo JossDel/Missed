@@ -28,7 +28,7 @@ public class DoorBarrierScript : MonoBehaviour
         return true;
     }
 
-    void DestroyBarrier(bool visible) // make this a Coroutine
+    public void DestroyBarrier(bool visible) // make this a Coroutine
     {
         if (visible)
         {

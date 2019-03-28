@@ -9,8 +9,9 @@ public class Documents : MonoBehaviour
     {
         PauseMenu.FindObjectOfType<PauseMenu>().GameIsPaused = true;
         Time.timeScale = 0f;
-        gameObject.SetActive(false);
         Note.SetActive(true);
+        PauseMenu.FindObjectOfType<PauseMenu>().finalNote = true;
+        gameObject.SetActive(false);
     }
 
     public void OnTriggerEnter2D(Collider2D other)
