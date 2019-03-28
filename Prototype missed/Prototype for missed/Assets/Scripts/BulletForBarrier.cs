@@ -10,7 +10,7 @@ public class BulletForBarrier : MonoBehaviour
 
     void Start()
     {
-        transform.up = GameObject.FindGameObjectWithTag("Barrier").transform.position - transform.position;
+        transform.up = GameObject.Find("Exitdoor").transform.position - transform.position;
         transform.GetComponent<Rigidbody2D>().velocity = transform.up * speed;
     }
 
@@ -28,7 +28,13 @@ public class BulletForBarrier : MonoBehaviour
     {
         if (barrier.tag.Equals("Barrier"))
         {
+            Debug.Log("Barrier");
             barrier.GetComponent<DoorBarrierScript>().TakeDamage(damage);
+            Destroy(gameObject);
+        }
+        else if (barrier.name.Equals("Exitdoor"))
+        {
+            Debug.Log("hit the dooor");
             Destroy(gameObject);
         }
     }

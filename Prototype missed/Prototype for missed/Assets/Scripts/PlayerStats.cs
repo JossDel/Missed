@@ -19,7 +19,7 @@ public class PlayerStats : MonoBehaviour
 
     float _weaponChangeBuffer;
     [SerializeField]
-    float _weaponChangeBufferTime = 3;
+    float _weaponChangeBufferTime = 1.5f;
 
     public GameObject _light;
     public GameObject _fire;

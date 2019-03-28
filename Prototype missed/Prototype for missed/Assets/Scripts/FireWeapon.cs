@@ -71,7 +71,7 @@ public class FireWeapon : MonoBehaviour
 
     public Vector3 BulScale()
     {
-        float scale = Mathf.Abs(chargingTime - 4f);
+        float scale = Mathf.Abs(Mathf.Lerp(2f, 7f, Mathf.InverseLerp(2f, 0f, chargingTime)));
         return new Vector3(scale, scale, 0);
     }
 

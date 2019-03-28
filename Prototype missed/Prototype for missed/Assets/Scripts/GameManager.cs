@@ -76,7 +76,7 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("health", 100);
         PlayerPrefs.SetInt("maxHealth", 100);
         PlayerPrefs.SetFloat("movementSpeed", playerStats.movementSpeed);
-        PlayerPrefs.SetInt("activeWeapon", 1);
+        PlayerPrefs.SetInt("activeWeapon", 2);
     }
 
     public void HardSaveReset()

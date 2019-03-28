@@ -128,7 +128,7 @@ MonoBehaviour:
   activeWeapon: 1
   progress: 0
   healthbar: {fileID: 0}
-  _weaponChangeBufferTime: 3
+  _weaponChangeBufferTime: 1.5
   _light: {fileID: 0}
   _fire: {fileID: 0}
   _electr: {fileID: 0}

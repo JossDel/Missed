@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Retry : MonoBehaviour
 {
+    float timer = 0;
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+        if (timer > 1.5 && Input.anyKeyDown)
         {
             if (GameObject.Find("Player").GetComponent<PlayerStats>().progress != 0)
             {
@@ -17,6 +18,7 @@ public class Retry : MonoBehaviour
             else
                 SceneManager.LoadScene("Final Tutorial");
         }
-        
+        timer += Time.deltaTime;
+
     }
 }

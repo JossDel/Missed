@@ -6,34 +6,68 @@ using UnityEngine.SceneManagement;
 
 public class FadeOut : MonoBehaviour
 {
-    GameObject fdsfds;
-
+    public bool trueForOut = true;
     public float fadeOutTime = 2f;
 
     void Start()
     {
-        fdsfds = gameObject;
-        StartCoroutine(SpriteFadeOut(fdsfds));
+        StartCoroutine(SpriteFadeOut(trueForOut));
     }
 
-    IEnumerator SpriteFadeOut(GameObject _sprite)
+    public IEnumerator SpriteFadeOut(bool outNotIn)
     {
-        Color tmpColor = _sprite.GetComponent<Graphic>().color;
+        //if (!outNotIn)
+        //{
+        //    Time.timeScale = 0f;
+        //    if (PauseMenu.FindObjectOfType<PauseMenu>())
+        //        PauseMenu.FindObjectOfType<PauseMenu>().GameIsPaused = true;
+        //}
+        Color tmpColor = gameObject.GetComponent<Graphic>().color;
 
-        while (tmpColor.a > 0f)
+        if (outNotIn)
         {
-            tmpColor.a -= Time.deltaTime / fadeOutTime;
-            _sprite.GetComponent<Graphic>().color = tmpColor;
+            yield return new WaitForEndOfFrame();
+            yield return new WaitForEndOfFrame();
+            yield return new WaitForEndOfFrame();
+            yield return new WaitForEndOfFrame();
 
-            if (tmpColor.a <= 0f)
-                tmpColor.a = 0.0f;
+            while (tmpColor.a > 0f)
+            {
+                tmpColor.a -= Time.unscaledDeltaTime / fadeOutTime;
+                gameObject.GetComponent<Graphic>().color = tmpColor;
 
-            yield return null;
+                if (tmpColor.a <= 0f)
+                    tmpColor.a = 0.0f;
+
+                yield return new WaitForEndOfFrame();
+            }
         }
-        _sprite.GetComponent<Graphic>().color = tmpColor;
+        else
+        {
+            while (tmpColor.a < 1f)
+            {
+                tmpColor.a += Time.unscaledDeltaTime / fadeOutTime;
+                gameObject.GetComponent<Graphic>().color = tmpColor;
 
-        yield return new WaitForSecondsRealtime(1);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        fdsfds.SetActive(false);
+                if (tmpColor.a >= 1f)
+                    tmpColor.a = 1f;
+
+                yield return new WaitForEndOfFrame();
+            }
+        }
+        gameObject.GetComponent<Graphic>().color = tmpColor;
+
+        yield return new WaitForSecondsRealtime(.5f);
+        if (!outNotIn)
+        {
+            //if (PauseMenu.FindObjectOfType<PauseMenu>())
+            //    if (PauseMenu.FindObjectOfType<PauseMenu>().GameIsPaused == true)
+            //        Time.timeScale = 1f;
+            //if (PauseMenu.FindObjectOfType<PauseMenu>())
+            //    PauseMenu.FindObjectOfType<PauseMenu>().GameIsPaused = false;
+            NextScene.FindObjectOfType<NextScene>().NextRoom();
+        }
+        if (SceneManager.GetActiveScene().name == "LogoScreen")
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

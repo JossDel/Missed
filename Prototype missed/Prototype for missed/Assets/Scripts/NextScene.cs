@@ -8,7 +8,7 @@ public class NextScene : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
-            NextRoom();
+            StartCoroutine(FadeOut.FindObjectOfType<FadeOut>().SpriteFadeOut(false));
     }
 
     public void NextRoom()

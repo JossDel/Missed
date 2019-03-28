@@ -41,7 +41,7 @@ public class EnemyToProjectile : MonoBehaviour
             {
                 DamageToBarrier = DraugrDamage;
 
-                scale = Mathf.Lerp(0.5f, 1.3f, perc);
+                scale = Mathf.Lerp(0.5f, 1.11f, perc);
 
                 enemy.transform.localScale = new Vector3(scale, scale, enemy.transform.localScale.z);
 
@@ -93,26 +93,29 @@ public class EnemyToProjectile : MonoBehaviour
                 Debug.LogError("WOW... EEEEY THERE BUDDY, calm down... Something went wrong in your coroutine");
         }
 
-        if (GameObject.FindGameObjectWithTag("Barrier"))
-        {
-            if (GameObject.FindGameObjectWithTag("BulletForBarrier"))
-            {
-                GameObject[] buls = GameObject.FindGameObjectsWithTag("BulletForBarrier");
-                float totalDamage = 0;
-                foreach(GameObject bulsS in buls)
-                    totalDamage += bulsS.GetComponent<BulletForBarrier>().GetDamage();
-                if (GameObject.FindGameObjectWithTag("Barrier").GetComponent<DoorBarrierScript>().DoesItLive(totalDamage))
-                {
-                    GameObject bul = Instantiate(projectile, enemy.transform.position, new Quaternion());
-                    bul.GetComponent<BulletForBarrier>().SetDamage(DamageToBarrier);
-                }
-            }
-            else
-            {
-                GameObject bul = Instantiate(projectile, enemy.transform.position, new Quaternion());
-                bul.GetComponent<BulletForBarrier>().SetDamage(DamageToBarrier);
-            }
-        }
+        //if (GameObject.FindGameObjectWithTag("Barrier"))
+        //{
+        //    if (GameObject.FindGameObjectWithTag("BulletForBarrier"))
+        //    {
+        //        GameObject[] buls = GameObject.FindGameObjectsWithTag("BulletForBarrier");
+        //        float totalDamage = 0;
+        //        foreach(GameObject bulsS in buls)
+        //            totalDamage += bulsS.GetComponent<BulletForBarrier>().GetDamage();
+        //        if (GameObject.FindGameObjectWithTag("Barrier").GetComponent<DoorBarrierScript>().DoesItLive(totalDamage))
+        //        {
+        //            GameObject bul = Instantiate(projectile, enemy.transform.position, new Quaternion());
+        //            bul.GetComponent<BulletForBarrier>().SetDamage(DamageToBarrier);
+        //        }
+        //    }
+        //    else
+        //    {
+        //        GameObject bul = Instantiate(projectile, enemy.transform.position, new Quaternion());
+        //        bul.GetComponent<BulletForBarrier>().SetDamage(DamageToBarrier);
+        //    }
+        //}
+
+        GameObject bul = Instantiate(projectile, enemy.transform.position, new Quaternion());
+        bul.GetComponent<BulletForBarrier>().SetDamage(DamageToBarrier);
 
         Destroy(stillProj);
         Destroy(enemy);
